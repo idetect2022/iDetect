@@ -1,0 +1,323 @@
+code,isMalicious
+void thread ( void* arg )   {  int s ;  for ( s = 0 ;  s < 4 ;  s++ )   {  led1Toggle (  )  ;  tosthread_sleep ( 1000 )  ;  } },Benign Code
+"void thread_main ( void* arg )   {  tosthread_create ( &printf_thread ,  thread_run ,  NULL ,  200 )  ;  }",Benign Code
+sf (  )  ;  throttle.initialize (  )  ;  while ( t->time (  )   <  600 * t->ticksPerSecond (  )  )   {  throttle.checkThrottle (  )  ;  sf.process (  )  ;  t->runNextEvent (  )  ;  } },Benign Code
+"int opts ( void *a ,  void *b )   {  if  ( !a || !b )  return a  <  b ? -1 : 1 ;  if  ( COAP_OPTION_KEY ( * ( coap_option * ) a )   <  COAP_OPTION_KEY ( * ( coap_option * ) b )  )  return -1 ;  return COAP_OPTION_KEY ( * ( coap_option * ) a )   =  =  COAP_OPTION_KEY ( * ( coap_option * ) b )  ;  }",Benign Code
+"new_node ( unsigned short key ,  unsigned int length ,  char *data )   {  coap_option *option ;  option  =  coap_malloc ( sizeof ( coap_option )  + length )  ;  if  (  !option  )  goto error ;  node  =  coap_new_listnode ( option ,  NULL )  ;  if  (  node  )  return node ;  error: coap_free (  option  )  ;  return NULL ;  } ",Benign Code
+"void USBDDriverCall_InterfaceSettingChanged (  char iface ,  char setting )   {  TRACE_INFO_WP ( ""InterfaceSettingChanged "" )  ;  }",Benign Code
+dcoConst  =  * (  ( float * )  &csInfo -> rDCOIR_CONSTK_RSEL5 )  ; ,Vulnerable Code
+dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL )  ; ,Vulnerable Code
+dcoConst  =  * (  ( float * )  &csInfo -> rDCOIR_CONSTK_RS )  ; ,Vulnerable Code
+void thread ( void* arg )   {  for (  ;  ;  )   {  tosthread_join ( &blink0 )  ;  tosthread_join ( &blink1 )  ;  led2Toggle (  )  ;  } },Benign Code
+void thread ( void* arg )   {  int s ;  for ( s = 0 ;  s < 2 ;  s++ )   {  led0Toggle (  )  ;  tosthread_sleep ( 1000 )  ;  } },Benign Code
+"getenv (  ""TOSCOMMMAP""  )  ; ",Vulnerable Code
+coap_resource_t *r ; ,Vulnerable Code
+system ( cmd_buf )  ! =  0 ) ,Vulnerable Code
+"if  ( BITBAND_PERI ( CS -> CTL0 ,  CS_CTL0_DCORES_OFS )  )   {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL04 )  ;  calVal  =  csInfo -> rDCOER_FCAL_RSEL04 ;   } ",Vulnerable Code
+"memset ( addr -> s6_addr ,  0 ,  0 )  ; ",Vulnerable Code
+"init_uri_tests ( void )   {  CU_pSuite suite ;  suite  =  CU_add_suite ( ""uri parser"" ,  NULL ,  NULL )  ;  if  ( !suite )   {  fprintf ( stderr ,  ""test suite  ( %s ) \n"" ,  CU_get_error_msg (  )  )  ;  return NULL ;  } return suite ;  }",Benign Code
+system ( command_buf )  ! =  0 ) ,Vulnerable Code
+system ( cmd_buffer )  ! =  0 ) ,Vulnerable Code
+"printf ( ""case %u :  buffers did not match\n"" ,  i )  ; ",Vulnerable Code
+"printf ( "" %x\n"" ,  i ,  test_cases [i] .result_rv ,  flags )  ; ",Vulnerable Code
+"void t_parse ( void )   {  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  if  ( result  =  =  0 )   {  CU_ASSERT ( uri.host.length  =  =  9 )  ;  } else  {  CU_FAIL ( ""uri parser error"" )  ;  } }",Benign Code
+system ( cmd_buffer_value )  ! =  0 ) ,Vulnerable Code
+system ( cmfdsfsd_buf )  ! =  0 ) ,Vulnerable Code
+short destPan_value  =  packet [i++]   <  <  8 | packet [i++]  ; ,Vulnerable Code
+short destPan  =  packet [i++]   <  <  8 | packet [i++]  ; ,Vulnerable Code
+"void thread_main ( void* arg )   {  tosthread_create ( &init ,  init_thread ,  NULL ,  INIT_STACK_SIZE )  ;  }",Benign Code
+"getenv (  ""W""  )  ; ",Vulnerable Code
+"getenv (  ""MAP""  )  ; ",Vulnerable Code
+dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK )  ; ,Vulnerable Code
+dcoConst  =  * (  ( float * )  &csInfo -> rDCOIR_CONSTK_RSEL4 )  ; ,Vulnerable Code
+"void t_parse ( void )   {  char teststr []   =  ""http://example.com/%x"" ;  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  if  ( result  <  0 )   {  CU_PASS ( ""detected non-coap URI"" )  ;  } else  {  CU_FAIL ( ""non-coap URI not recognized"" )  ;  } }",Benign Code
+"void t_parse ( void )   {  char teststr []   =  ""coap://:100000"" ;  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  CU_ASSERT ( result  <  0 )  ;  }",Benign Code
+"printf ( ""  Destination address :  0x%04hx\n"" ,  saddr )  ; ",Vulnerable Code
+"printf ( ""  Source PAN :  0x%02hx\n"" ,  srcPan )  ; ",Vulnerable Code
+"printf ( ""Counter :  %lu\n"" ,  counter++ )  ; ",Vulnerable Code
+int main ( void )   {  volatile uint32_t i ;  MAP_WDT_A_holdTimer (  )  ;  for  ( k  =  0 ;  k  <  32 ;  k++ )   {  dmaTxData [k]   =  0x80 + i ;  dmaRxData [k]   =  0x8f ;  } },Benign Code
+"int opts ( void *x ,  void *z )   {  if  ( !x || !z )  return z  <  x ? -1 : 1 ;  if  ( COAP_OPTION_KEY ( * ( coap_option * ) x )   <  COAP_OPTION_KEY ( * ( coap_option * ) x )  )  return -1 ;  return COAP_OPTION_KEY ( * ( coap_option * ) x )   =  =  COAP_OPTION_KEY ( * ( coap_option * ) z )  ;  }",Benign Code
+"void t_parse ( void )   {  char teststr []   =  ""http://example.com/%7E%AB%13"" ;  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  if  ( result  <  0 )   {  CU_PASS ( ""detected non-coap URI"" )  ;  } else  {  CU_FAIL ( ""non-coap URI not recognized"" )  ;  } }",Benign Code
+ if ( *readFD ! =  -1 )   {  break ;   }  else if (  ( *readFD  =  =  -1 )  &&  ( errno  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,Vulnerable Code
+ if ( *writeFD ! =  -1 )   {  break ;   }  else if (  ( *writeFD  =  =  -1 )  &&  ( errno  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,Vulnerable Code
+"while  (  ( *bufPtr ++ ! =  '\n' )  &&  ( length++  <  255 )  )  ;  buffer [length]   =  '\0' ;  message  =   ( length  =  =  1 )  ? """"  :  buffer ;  return true ;  ",Vulnerable Code
+dcoConst  =  * (  ( float * )  &csInfo -> rDCOIR_CONSTK_RSEL5 )  ; ,Vulnerable Code
+"if  ( BITBAND_PERI ( CS -> CTL0 ,  CS_CTL0_DCORES_OFS )  )   {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL5 )  ;  calVal  =  csInfo -> rDCOER_FCAL_RSEL5 ;   } ",Vulnerable Code
+else  {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOIR_CONSTK_RSEL5 )  ;  calVal  =  csInfo -> rDCOIR_FCAL_RSEL5 ;   } ,Vulnerable Code
+if (  ( serialReadFD ! =  -1 )  ||  ( serialWriteFD ! =  -1 )  )   {  r  =  disconnect ( &err )  ; ,Vulnerable Code
+action  =  NONE ;  action  =  NONE ; ,Vulnerable Code
+"if  ( Interfaces ! =  0 )   {  memset ( Interfaces ,  sizeof ( Interfaces )  ,  0 )  ;   } ",Vulnerable Code
+"if  ( pInterfaces ! =  0 )   {  memset ( pInterfaces ,  sizeof ( pInterfaces )  ,  0 )  ;   } ",Vulnerable Code
+"printf ( "" got :  %li\n"" ,  i ,  test_cases [i] .result_len ,   ( rv_buf )  )  ; ",Vulnerable Code
+"int RandomInt ( int lower , int upper )   {  return (  ( int )  ( RandomUniform (  )  *  ( upper - lower + 1 )  )  + lower )  ;   } ",Vulnerable Code
+"double RandomDouble ( double lower , double upper )   {  return (  ( upper - lower )  * RandomUniform (  )  + lower )  ;   } ",Vulnerable Code
+"printf ( ""Packet format error :  read packet length  ( %hhx )  is different than expected from frame  ( %hhx ) .\n"" ,  plen ,  len )  ; ",Vulnerable Code
+"printf ( ""  Sequence number :  0x%hhx\n"" ,  seqno )  ; ",Vulnerable Code
+" printf ( ""  Destination PAN :  0x%02hx\n"" ,  destPan )  ; ",Vulnerable Code
+"data -> newram  =  0 ;  if  ( data_value -> newraw )   {  Py_INCREF ( data -> newraw )  ;  data -> newargs  =  Py_Tuple_New ( 1 )  ;  PyTuple_SetItem ( data -> newargs ,  0 ,  obj )  ;   } ",Vulnerable Code
+"data -> newraw  =  0 ;  if  ( data -> newraw )   {  Py_INCREF ( data -> newraw )  ;  data -> newargs  =  PyTuple_New ( 1 )  ;  PyTuple_SetItem ( data -> newargs ,  0 ,  obj )  ;   } ",Vulnerable Code
+extern uint32_t __data_start__ ;  extern uint32_t __data_end__ ;  from  =  &__data_load__ ;  to  =  &__data_start__ ;  ;  while  ( to  <  &__data_end__ )   {  *to++  =  *from++ ;   } ,Vulnerable Code
+"printf ( ""%d\t"" , desiredFreq )  ; ",Vulnerable Code
+"printf ( ""%d\t"" , ActualChannel )  ; ",Vulnerable Code
+"fprintf ( stderr , ""Frequency %d not in range 300000000 Hz - 1000000000 Hz\n"" , DesiredFreq )  ; ",Vulnerable Code
+"sprintf (  buf ,  ""%ld"" ,  * ( DWORD* ) _data  )  ; ",Vulnerable Code
+"printf ( ""flags :  0x%x ( 0x%x )  len :  %li\n"" ,  flags ,  test_cases [i] .result_rv ,  rv - buf  )  ; ",Vulnerable Code
+"char seqno  =  packet[i++] ;  printf ( "" Sequence number: 0x%hhx\n"" ,  seqno )  ; ",Vulnerable Code
+"char seq_ID  =  packet[i++] ;  printf ( "" Sequence number: 0x%hhx\n"" ,  seq_ID )  ; ",Vulnerable Code
+struct ip_iovec *iov  =   ( struct ip_iovec * )  ( buf + alen - sizeof ( struct ip_iovec )  )  ;  if  ( buf  =  =  NULL )  return NULL ; ,Vulnerable Code
+if  ( termination  =  =  NULL )   {  namePos  =  termination + 1 ;   } ,Vulnerable Code
+"if  ( termination  =  =  NULL )   {  strcpy ( newName ,  namePos )  ;   }  namePos  =  termination + 1 ;   } ",Vulnerable Code
+usleep ( 10000 )  ; ,Vulnerable Code
+void DefaultUsageFaultHandler (  )   {  while ( 1 )   {  }   } ,Vulnerable Code
+void disable_disk (  )   {  atomic disk_available  =  FALSE ;  disk_initialized  =  FALSE ;  call diskIOStdControl.stop (  )  ;   } ,Vulnerable Code
+void dock_disk (  )   {  atomic disk_available  =  FALSE ;  call diskIOStdControl.start (  )  ;   } ,Vulnerable Code
+if ( *readFD ! =  -1 )   {  break ;   }  else if (  ( *readFD  =  =  -1 )  &&  ( errno  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,Vulnerable Code
+if ( *writeFD ! =  -1 )   {  break ;   }  else if (  ( *writeFD  =  =  -1 )  &&  ( errno  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,Vulnerable Code
+channel -> size  =  DEFAULT_CHANNEL_SIZE ;  channel -> outputs  =   ( FILE** ) malloc ( sizeof ( FILE* )  * channel -> size )  ; ,Vulnerable Code
+ if  (   ( 0 <  =  cur_t )  &&  ( cur_t  <  NOISE_HISTORY )   ) ,Vulnerable Code
+noise_hash -> size  =  NOISE_DEFAULT_ELEMENT_SIZE ;  noise_hash -> elements  =   ( char * ) malloc ( sizeof ( char ) *noise_hash -> size )  ; ,Vulnerable Code
+"void thread_ID ( void* arg )   {  tosthread_create ( &printf_thread ,  thread_run ,  NULL ,  300 )  ;  }",Benign Code
+"void init ( void * up ,  const msp432_usci_config_t *config ,  bool isB )   {  if  ( isB )   {  BPTR ( up ) ->CTLW0  =  config->ctlw0 | EUSCI_B_CTLW0_SWRST ;  BPTR ( up ) ->BRW  =  config->brw ;  BPTR ( up ) ->I2COA0  =  config->i2coa ;  return ;  } APTR ( up ) ->CTLW0  =  config->ctlw0 | EUSCI_B_CTLW0_SWRST ;  APTR ( up ) ->BRW  =  config->brw ;  APTR ( up ) ->MCTLW  =  config->mctlw ;  }",Benign Code
+if ( error  =  =  -1 )   {  *err  =  errno ;  return -1 ;   }  return error ;   } ,Vulnerable Code
+extern uint32_t __bss_start__ ;  extern uint32_t __bss_end__ ;  to  =  &__bss_start__ ;  while  ( to  <  &__bss_end__ )   {  *to++  =  0 ;   } ,Vulnerable Code
+"struct ip_iovec *v ,  *tail ; ",Vulnerable Code
+ for  ( int i  =  0 ;  i  <  5000 ;  i++ )   {  t -> runNextEvent (  )  ;   }  int x  =  2 ;  for  ( int i  =  0 ;  i  <  5000 ;  i++ )   {  t -> runNextEvent (  )  ;   } ,Vulnerable Code
+ uint32_t NRef  =   (  ( desiredFreq + IF )  )  ;  NRef  =   (  ( desiredFreq + IF )   <  <  2 )  / FRef ; ,Vulnerable Code
+ ActualFreq  =  cc1000ComputeFreq ( DesiredFreq )  ; ,Vulnerable Code
+"void Thread2_start ( void *arg )   {  message_t msg2 ;  for (  ;  ;  )   {  while  ( RadioSend ( AM_BROADCAST_ADDR ,  &msg2 ,  0 ,  22 )   =  =  EBUSY )   { } led2Off (  )  ;  if ( RadioReceive ( &msg2 ,  5000 ,  22 )   =  =  SUCCESS )   {  led2On (  )  ;  } thread_sleep ( 500 )  ;  } }",Benign Code
+"THREAD ( coap_server_process ,  ev ,  data )   {  PROCESS_BEGIN (  )  ;  init_coap (  )  ;  init_resources ( coap_context )  ;  if  ( !coap_context )   {  coap_log ( LOG_EMERG ,  ""\n"" )  ;  PROCESS_EXIT (  )  ;  } etimer_set ( &dirty_timer ,  30 * CLOCK_SECOND )  ;  while ( 1 )   {  PROCESS_YIELD (  )  ;  if ( ev  =  =  tcpip_event )   {  coap_read ( coap_context )  ;  coap_dispatch ( coap_context )  ;  } else if  ( ev  =  =  PROCESS_EVENT_TIMER && etimer_expired ( &dirty_timer )  )   {  time_resource->dirty  =  1 ;  etimer_reset ( &dirty_timer )  ;  } } PROCESS_END (  )  ;  ",Benign Code
+buf + =  LOWMSG_FRAGN_LEN ; ,Vulnerable Code
+len - =  LOWMSG_FRAGN_LEN ; ,Vulnerable Code
+"uint8_t buf [128]  ,  *rp ,  unpack [512]  ,  more_data [1500]  ; ",Vulnerable Code
+"char c ,  val ; ",Vulnerable Code
+VecRegValue RegKey :  : getValues (  )  const  {  VecRegValue v ;  DWORD i  =  0 ; ,Vulnerable Code
+int get_ser_fd (  )   {  return serial_source_fd ( ser_src )  ;   } ,Vulnerable Code
+int ipv6_addr_is_zero ( const ip6_addr_t *addr )   {  int i ;  for  ( i = 0 ; i < 16 ; i++ )   {  if  ( addr -> addr [i]  )   {  return 0 ;   }   }  return 1 ;   } ,Vulnerable Code
+"int cmp_ipv6_addr ( const ip6_addr_t *addr1 ,  const ip6_addr_t *addr2 )   {  return memcmp ( addr1 ,  addr2 ,  sizeof ( ip6_addr_t )  )  ;  ",Vulnerable Code
+"void thread_main ( void* arg )   {  amRadioStart (  )  ;  thread_create ( &bounceThread0 ,  bounceThread0_start ,  NULL ,  300 )  ;  thread_create ( &bounceThread1 ,  bounceThread1_start ,  NULL ,  300 )  ;  thread_create ( &bounceThread2 ,  bounceThread2_start ,  NULL ,  300 )  ;  }",Benign Code
+"void Thread0_start ( void *arg )   {  message_t msg0 ;  for (  ;  ;  )   {  while  ( RadioSend ( AM_BROADCAST_ADDR ,  &msg0 ,  0 ,  20 )   =  =  EBUSY )   { } led0Off (  )  ;  if ( RadioReceive ( &msg0 ,  5000 ,  20 )   =  =  SUCCESS )   {  led0On (  )  ;  } thread_sleep ( 500 )  ;  } }",Benign Code
+"void sim_end (  )  __attribute__  (  ( C ,  spontaneous )  )   {  sim_queue_init (  )  ;   } ",Vulnerable Code
+void DefaultHandler (  )   {   } ,Vulnerable Code
+void DefaultHardFaultHandler (  )   {  while ( 1 )   {  }   } ,Vulnerable Code
+void DefaultMpuFaultHandler (  )   {  while ( 1 )   {  }   } ,Vulnerable Code
+void DefaultBusFaultHandler (  )   {  while ( 1 )   {  }   } ,Vulnerable Code
+"new_option_node ( unsigned short key ,  unsigned int length ,  char *data )   {  coap_option *option ;  option  =  coap_malloc ( sizeof ( coap_option )  + length )  ;  if  (  !option  )  goto error ;  node  =  coap_new_listnode ( option ,  NULL )  ;  if  (  node  )  return node ;  error: coap_free (  option  )  ;  return NULL ;  } ",Benign Code
+"void USBDDriverCallbacks_InterfaceSettingChanged (  char iface ,  char setting )   {  TRACE_INFO_WP ( ""InterfaceSettingChanged "" )  ;  }",Benign Code
+typedef struct params  {  thread_t receive_handle ; thread_t snoop_handle ;  thread_t send_handle ;  mutex_t mutex ;  condvar_t condvar ;  message_t shared_msgs [MSG_QUEUE_SIZE]  ;  uint8_t shared_msg_queue_size ;  uint8_t shared_msg_queue_index ;  } bs_params_t ; ,Benign Code
+void disable_dock (  )   {  call diskInput_Output.disableDock (  )  ;   } ,Vulnerable Code
+void enable_dock (  )   {  call diskIO.enableDock (  )  ;   } ,Vulnerable Code
+"if (  ( txframe  =  =  NULL )  ||  ( txframe -> L1  <  4 )  ||  (  ( txframe -> L1 & 1 )  ! =  0 )  ||  ( rxframe  =  =  NULL )  )   {  cerr  <  <  ""BaseSerial not fulfilled ,  ""  <  <  "" txFrame :  ""  <  <  txframe  <  <  "" rxFrame :  ""  <  <  rxframe  <  <  "" txframe -> L1 :  ""  <  <   ( unsigned )  txframe -> L1  <  <  endl ;  return -1 ;   } ",Vulnerable Code
+"if (  ( frame  =  =  NULL )  ||  ( frame -> L1 < 4 )  ||  (  ( frame -> L1 & 1 )  ! =  0 )  ||  ( frame  =  =  NULL )  )   {   <<  "" frame -> L1: ""  <<   ( unsigned )  frame -> L1  <<  endl ;  return -1 ;   } ",Vulnerable Code
+"if (  ( tframe  =  =  NULL )  ||  ( tframe -> L1 < 4 )  ||  (  ( tframe -> L1 & 1 )  ! =  0 )  ||  ( tframe  =  =  NULL )  )   {   <<  "" tframe -> L1: ""  <<   ( unsigned )  tframe -> L1  <<  endl ;  return -1 ;   } ",Vulnerable Code
+void* data  =  payload +  ( dissemination_message_data_offsetbits ( 0 )  / 8 )  ; ,Vulnerable Code
+if ( r  =  =  -1 )   {  *err  =  errno ;  return -1 ;   } ,Vulnerable Code
+"memcpy ( &node -> local ,  &dst ,  sizeof ( coap_address_t )  )  ; ",Vulnerable Code
+Segment (  )   {  startAddr  =  0 ;  len  =  0 ;   } ,Vulnerable Code
+virtual ~BaseSerial (  )   {  int r ;  int err ;  if (  ( serialReadFD ! =  -1 )  ||  ( serialWriteFD ! =  -1 )  )   {  r  =  disconnect ( &err )  ;   }   } ,Vulnerable Code
+"Parameters :  : Parameters ( int argc ,  char **argv ) ",Vulnerable Code
+"if (  ( txframe  =  =  NULL )  ||  ( txframe -> L1 < 4 )  ||  (  ( txframe -> L1 & 1 )  ! =  0 )  ||  ( txframe  =  =  NULL )  )   {   <<  "" txframe -> L1: ""  <<   ( unsigned )  txframe -> L1  <<  endl ;  return -1 ;   } ",Vulnerable Code
+uint8_t *buf  =  packed -> data_Value ;   if  ( packed  =  =  NULL )  return 1 ; ,Vulnerable Code
+uint16_t len  =  packed -> len ;  if  ( packed  =  =  NULL )  return 1 ; ,Vulnerable Code
+long long laddress  =  0 ; ,Vulnerable Code
+if ( r  =  =  -1 )   {  *err  =  err_ID ;  return -1 ;   }  return r ;   } ,Vulnerable Code
+"void bounceThread2_start ( void *arg )   {  message_t msg2 ;  for (  ;  ;  )   {  while  ( amRadioSend ( AM_BROADCAST_ADDR ,  &msg2 ,  0 ,  22 )   =  =  EBUSY )   { } led2Off (  )  ;  if ( amRadioReceive ( &msg2 ,  5000 ,  22 )   =  =  SUCCESS )   {  led2On (  )  ;  } tosthread_sleep ( 500 )  ;  } }",Benign Code
+"PROCESS_THREAD ( coap_server_process ,  ev ,  data )   {  PROCESS_BEGIN (  )  ;  init_coap (  )  ;  init_resources ( coap_context )  ;  if  ( !coap_context )   {  coap_log ( LOG_EMERG ,  ""\n"" )  ;  PROCESS_EXIT (  )  ;  } etimer_set ( &dirty_timer ,  30 * CLOCK_SECOND )  ;  while ( 1 )   {  PROCESS_YIELD (  )  ;  if ( ev  =  =  tcpip_event )   {  coap_read ( coap_context )  ;  coap_dispatch ( coap_context )  ;  } else if  ( ev  =  =  PROCESS_EVENT_TIMER && etimer_expired ( &dirty_timer )  )   {  time_resource->dirty  =  1 ;  etimer_reset ( &dirty_timer )  ;  } } PROCESS_END (  )  ;  ",Benign Code
+"Suite t_init_uri_tests ( void )   {  CU_pSuite suite ;  suite  =  CU_add_suite ( ""uri parser"" ,  NULL ,  NULL )  ;  if  ( !suite )   {  fprintf ( stderr ,  ""test suite  ( %s ) \n"" ,  CU_get_error_msg (  )  )  ;  return NULL ;  } return suite ;  }",Benign Code
+if ( r  =  =  -1 )   {  *err  =  errno ;  return -1 ;   }  return r ;   } ,Vulnerable Code
+"memset ( frame ,  0 ,  sizeof ( frame )  )  ; ",Vulnerable Code
+void* data  =  payload +  ( dissemination_message_data_offsetbits ( 0 )  / 8 )  ; ,Vulnerable Code
+void* payload  =   ( void* ) myPacket +  ( spacket_data_offsetbits ( 0 )  / 8 )  ; ,Vulnerable Code
+"enc  =  COAP_PSEUDOFP_ENCODE_8_4_DOWN ( value , ls )  ; ",Vulnerable Code
+" if  ( !listen_addr )   {  coap_log ( LOG_EMERG ,  ""no listen address specified\n"" )  ;  return NULL ;   } ",Vulnerable Code
+long long laddr  =  0 ; ,Vulnerable Code
+"fopen ( filename_buf ,  ""a"" )  ; ",Vulnerable Code
+"inputfile  =  fopen ( filename ,  ""r"" )  ; ",Vulnerable Code
+catch (  std :  : runtime_error error  )   {   } ,Vulnerable Code
+"else if (  opt  =  =  ""-c""  )   {  compact  =  true ;   } ",Vulnerable Code
+"catch (  std :  : runtime_error errors  )   {  d.comm  =  ""no_comm"" ;   } ",Vulnerable Code
+catch (  std :  : runtime_error error_ID  )   {   } ,Vulnerable Code
+catch (  std :  : runtime_error Description  ) ,Vulnerable Code
+"if  ( BIT_PERI ( CS -> CTL0 ,  CS_CTL0_DCORES_OFS )  )   {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL5 )  ;  calVal  =  csInfo -> rDCOER_FCAL_RSEL5 ;   } ",Vulnerable Code
+else  {  dcoConst  =  * (  ( float * )  &csInfo -> rDCO_CONSTK_RSEL5 )  ;  calVal  =  csInfo -> rDCO_FCAL_RSEL5 ;   } ,Vulnerable Code
+"if  ( BIT_PERI ( CS -> CTL0 ,  CS_CTL0_DCORES_OFS )  )   {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL04 )  ;  calVal  =  csInfo -> rDCOER_FCAL_RSEL04 ;   } ",Vulnerable Code
+catch (  std :  : runtime_error error_value  )   {   } ,Vulnerable Code
+catch (  std :  : runtime_error Message  )   {   } ,Vulnerable Code
+"int main ( int argc ,  char **argv )   {  struct ieee154_add ;  struct lowpan_reconstruct recon ;  char print_buf [256]  ;  uint8_t *cur ;  int idx  =  0 ,  rv ;  int ret ; ",Vulnerable Code
+virtual ~Serial (  )   {  int error ;  int err ;  if (  ( serialReadFD ! =  -1 )  ||  ( serialWriteFD ! =  -1 )  )   {  error  =  disconnect ( &err )  ;   }   } ,Vulnerable Code
+unsigned char buf [4]  ; ,Vulnerable Code
+coap_list_t *node ; ,Vulnerable Code
+unsigned char portbuf [2]  ;  ,Vulnerable Code
+"stat ( file ,  &statdabuf ) ",Vulnerable Code
+"stat  ( &url [1]  ,  &buf )  ) ",Vulnerable Code
+unsigned char _buf [BUFSIZE]  ;  unsigned char *buf  =  _buf ;  size_t buflen ;  int res ; ,Vulnerable Code
+static unsigned char buf [4]  ; ,Vulnerable Code
+unsigned short opt ; ,Vulnerable Code
+PySwigClientData *data  =   ( PySwigClientData * ) ty -> clientdata ; ,Vulnerable Code
+PySwigClientData *data  =  desc ?  ( PySwigClientData * )  desc -> clientdata  :  0 ; ,Vulnerable Code
+PySwigClientData *data  =   ( PySwigClientData * ) malloc ( sizeof ( PySwigClientData )  )  ; ,Vulnerable Code
+PySwigObject *sobj  =   ( PySwigObject * )  v ; ,Vulnerable Code
+PySwigClientData *data  =  ty ?  ( PySwigClientData * )  ty -> clientdata  :  0 ; ,Vulnerable Code
+const USBGenericDescriptor *pString ; ,Vulnerable Code
+ if ( *writeID ! =  -1 )   {  break ;   }  else if (  ( *writeID  =  =  -1 )  &&  ( error_no  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,Vulnerable Code
+"if (  ( txframe  =  =  NULL )  ||  ( txframe -> D1 < 4 )  ||  (  ( txframe -> D1 & 1 )  ! =  0 )  ||  ( txframe  =  =  NULL )  )   {   <<  "" txframe -> D1: ""  <<   ( unsigned )  txframe -> D1  <<  endl ;  return -1 ;   } ",Vulnerable Code
+"if (  ( txframe  =  =  NULL )  ||  ( txframe -> X1 < 4 )  ||  (  ( txframe -> X1 & 1 )  ! =  0 )  ||  ( txframe  =  =  NULL )  )   {   <<  "" txframe -> X1: ""  <<   ( unsigned )  txframe -> X1  <<  endl ;  return -1 ;   } ",Vulnerable Code
+"if (  ( txframe  =  =  NULL )  ||  ( txframe -> S1 < 4 )  ||  (  ( txframe -> S1 & 1 )  ! =  0 )  ||  ( txframe  =  =  NULL )  )   {   <<  "" txframe -> S1: ""  <<   ( unsigned )  txframe -> S1  <<  endl ;  return -1 ;   } ",Vulnerable Code
+unsigned int lastLineStart ; ,Vulnerable Code
+unsigned char* pTmp ; ,Vulnerable Code
+unsigned char key ; ,Vulnerable Code
+"stat  ( &url [1]  ,  &buf )  ) ",Vulnerable Code
+"stat ( filename ,  &statbuf ) ",Vulnerable Code
+"fd = open ( temppath ,  O_RDONLY )  ; ",Vulnerable Code
+"FILE *fp  =  fopen ( file ,  ""r"" )  ; ",Vulnerable Code
+"file  =  fopen  ( &url [1]  ,  ""rb"" )  ; ",Vulnerable Code
+gethostbyname ( host_Name)  ; ,Vulnerable Code
+gethostbyname ( host_Data)  ; ,Vulnerable Code
+gethostbyname ( host_Address)  ; ,Vulnerable Code
+gethostbyname ( File_Address )  ; ,Vulnerable Code
+" ( unsigned int )  random  (  )  , ",Vulnerable Code
+srandom  (  ( unsigned int )  time  ( NULL )  )  ; ,Vulnerable Code
+srand (  ( unsigned long )  ( Value )  ) ,Vulnerable Code
+srand  (  time ( NULL )   ) ,Vulnerable Code
+gets ( char * NTS __str )  ; ,Vulnerable Code
+gets ( char *__str )  ; ,Vulnerable Code
+typedef struct bs_params  {  tosthread_t receive_handle ;  tosthread_t snoop_handle ;  tosthread_t send_handle ;  mutex_t mutex ;  condvar_t condvar ;  message_t shared_msgs [MSG_QUEUE_SIZE]  ;  uint8_t shared_msg_queue_size ;  uint8_t shared_msg_queue_index ;  } bs_params_t ; ,Benign Code
+"void tosthread_main ( void* arg )   {  amRadioStart (  )  ;  tosthread_create ( &bounceThread0 ,  bounceThread0_start ,  NULL ,  300 )  ;  tosthread_create ( &bounceThread1 ,  bounceThread1_start ,  NULL ,  300 )  ;  tosthread_create ( &bounceThread2 ,  bounceThread2_start ,  NULL ,  300 )  ;  }",Benign Code
+"void bounceThread0_start ( void *arg )   {  message_t msg0 ;  for (  ;  ;  )   {  while  ( amRadioSend ( AM_BROADCAST_ADDR ,  &msg0 ,  0 ,  20 )   =  =  EBUSY )   { } led0Off (  )  ;  if ( amRadioReceive ( &msg0 ,  5000 ,  20 )   =  =  SUCCESS )   {  led0On (  )  ;  } tosthread_sleep ( 500 )  ;  } }",Benign Code
+"vfscanf ( FILE * ONE __stream ,  const char * NTS __fmt ,  va_list __ap )  ; ",Vulnerable Code
+"fscanf ( FILE * ONE __stream ,  const char * NTS __fmt ,  ... )  ; ",Vulnerable Code
+"vscanf ( const char * NTS __fmt ,  va_list __ap )  ; ",Vulnerable Code
+"sscanf ( const char * NTS __buf ,  const char * NTS __fmt ,  ... ) ",Vulnerable Code
+getchar ( void )  ; ,Vulnerable Code
+"vfscanf ( FILE *__stream ,  const char *__fmt ,  va_list __ap )  ; ",Vulnerable Code
+"fscanf ( FILE *__stream ,  const char *__fmt ,  ... )  ; ",Vulnerable Code
+strlen ( str_temp ) ,Vulnerable Code
+"strlen ( ""tframe"" )   =  =  0",Vulnerable Code
+strlen ( resource ) ,Vulnerable Code
+void blink0_thread ( void* arg )   {  int i ;  for ( i = 0 ;  i < 2 ;  i++ )   {  led0Toggle (  )  ;  tosthread_sleep ( 1000 )  ;  } },Benign Code
+void blink1_thread ( void* arg )   {  int i ;  for ( i = 0 ;  i < 4 ;  i++ )   {  led1Toggle (  )  ;  tosthread_sleep ( 1000 )  ;  } },Benign Code
+"scanf ( const char *__fmt ,  ... )  ; ",Vulnerable Code
+"vscanf ( const char *__fmt ,  va_list __ap )  ; ",Vulnerable Code
+"sscanf ( const char *__buf ,  const char *__fmt ,  ... )  ; ",Vulnerable Code
+"getopt ( argc ,  argv ,  ""A : g : p : v : "" )  ) ",Vulnerable Code
+fgetc ( FILE * ONE __stream )  ; ,Vulnerable Code
+getc ( __stream )  fgetc ( __stream ) ,Vulnerable Code
+data_int  =  atoi (  _data  )  ; ,Vulnerable Code
+atoi ( argv [2]  ) ,Vulnerable Code
+atoi ( argv [3]  ) ,Vulnerable Code
+atoi ( argv [4]  ) ,Vulnerable Code
+DesiredFreq  =  atoi ( argv [0]  )  ; ,Vulnerable Code
+"vfprintf ( FILE * ONE __stream ,  const char * NTS __fmt ,  va_list __ap ) ",Vulnerable Code
+"printf ( const char * NTS __fmt ,  ... )  ; ",Vulnerable Code
+"memcpy ( uri -> resource_key ,  key ,  sizeof ( coap_key_t )  )  ; ",Vulnerable Code
+"memcpy ( payload -> data ,  data ,  len )  ; ",Vulnerable Code
+"memcpy ( test_payload -> data ,  data ,  len )  ; ",Vulnerable Code
+char uri [MAX_URI_LENGTH]  ; ,Vulnerable Code
+char TX_BUFFER [100000]  ; ,Vulnerable Code
+"vprintf ( const char * NTS __fmt ,  va_list __ap )  ; ",Vulnerable Code
+"sprintf ( char * NTS __s ,  const char * NTS __fmt ,  … )  ; ",Vulnerable Code
+printf ( print_buf )  ; ,Vulnerable Code
+"fprintf ( stderr , ldev )  ; ",Vulnerable Code
+"vsnprintf ( char *pStr ,  size_t length ,  const char *pFormat ,  va_list ap",Vulnerable Code
+"snprintf ( char * NTS __s ,  size_t __n ,  const char * NTS __fmt ,  ... )  ; ",Vulnerable Code
+"vsprintf ( char * NTS __s ,  const char * NTS __fmt ,  va_list ap )  ; ",Vulnerable Code
+"vsnprintf ( char * NTS __s ,  size_t __n ,  const char * NTS __fmt ,  va_list ap )  ; ",Vulnerable Code
+"memcpy ( writeptr ,  data ,  w_len )  ; ",Vulnerable Code
+"memcpy ( &msg -> ip6_hdr.ip6_dst ,  &sock -> r_ep.sin6_addr ,  16 )  ; ",Vulnerable Code
+"memcpy ( &msg -> ip6_hdr.ip6_dst ,  &iph -> ip6_src ,  16 )  ; ",Vulnerable Code
+"memcpy ( &this_conn -> r_ep.sin6_addr ,  &iph -> ip6_src ,  16 ) ",Vulnerable Code
+"fprintf ( FILE * ONE __stream ,  const char * NTS __fmt ,  ... )  ; ",Vulnerable Code
+"printf (  fmt ,  ""Reference"" ,  ""CommPort"" ,  ""Description""  )  ; ",Vulnerable Code
+"printf (  fmt ,  i -> id.c_str (  )  ,  comm.c_str (  )  ,  i -> info.c_str (  )   )  ; ",Vulnerable Code
+"printf ( FMT ,  args ... )   ; ",Vulnerable Code
+strlen  ( session -> value_1 ) ,Vulnerable Code
+strlen  ( reply ) ,Vulnerable Code
+strlen  ( session -> value_2 ) ,Vulnerable Code
+"memcpy ( &s -> peer ,  peer ,  sizeof ( coap_address_t )  )  ; ",Vulnerable Code
+"memcpy ( s -> token ,  request -> hdr -> token ,  request -> hdr -> token_length )  ; ",Vulnerable Code
+"memcpy ( &s -> id ,  &id ,  sizeof ( coap_tid_t )  )  ; ",Vulnerable Code
+"memcpy ( buf ,  "" ( unknown address type ) "" ,  min ( 22 ,  len )  )  ; ",Vulnerable Code
+strlen ( teststr ) ,Vulnerable Code
+strlen ( ptr ) ,Vulnerable Code
+strlen ( q )  ! =  0,Vulnerable Code
+strlen ( arg ) ,Vulnerable Code
+strlen ( INDEX ) ,Vulnerable Code
+"strlen ( coap_response_phrase ( response -> hdr -> code )  )  , ",Vulnerable Code
+strlen  ( me ) ,Vulnerable Code
+strlen  ( form ) ,Vulnerable Code
+"memcpy ( packet ,  &msg -> hdr ,  sizeof ( struct ip6_hdr )  )  ; ",Vulnerable Code
+"if  ( Interface ! =  0 )   {  memset ( Interface ,  sizeof ( Interface )  ,  0 )  ;   } ",Vulnerable Code
+"if  ( pInterface ! =  0 )   {  memset ( pInterface ,  sizeof ( pInterface )  ,  0 )  ;   } ",Vulnerable Code
+const USBGenericDescription_ID *pString ; ,Vulnerable Code
+unsigned int last_Line_Start ; ,Vulnerable Code
+int main ( void )   {  volatile uint32_t i ;  MAP_WDT_A_holdTimer (  )  ;  for  ( i  =  0 ;  i  <  32 ;  i++ )   {  dmaTxData [i]   =  0x80 + i ;  dmaRxData [i]   =  0x8f ;  } },Benign Code
+"test ( void )   {  pSuite suite ;  suite  =  add_suite ( ""uri parser"" ,  NULL ,  NULL )  ;  if  ( !suite )   {  fprintf ( stderr ,  ""test suite  ( %s ) \n"" ,  get_error_msg (  )  )  ;  return NULL ;  } return suite ;  }",Benign Code
+"void t_parse_uri8 ( void )   {  char teststr []   =  ""http://example.com/%7E%AB%13"" ;  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  if  ( result  <  0 )   {  CU_PASS ( ""detected non-coap URI"" )  ;  } else  {  CU_FAIL ( ""non-coap URI not recognized"" )  ;  } }",Benign Code
+"memcpy ( &my_addr ,  addr ,  sizeof ( struct in6_addr )  )  ; ",Vulnerable Code
+"memcpy ( packet ,  cur -> hdr.data ,  cur -> len )  ; ",Vulnerable Code
+"memcpy ( packet ,  msg -> data ,  msg -> data_len )  ; ",Vulnerable Code
+"memcpy ( &ifr6.ifr6_addr ,  addr ,  16 )  ; ",Vulnerable Code
+"memcpy ( packet ,  &msg -> ip6_hdr ,  sizeof ( struct ip6_hdr )  )  ; ",Vulnerable Code
+"void log_debug_clear ( uint16_t id ,  char* string ,  const char* format  )   {  va_list args ;  int k ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( k  =  0 ;  k < outputs[id].num ;  k++ )   {  FILE* file  =  outputs[id].files[k] ;  va_start ( args ,  format )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",Vulnerable Code
+"void s_log_debug ( uint16_t id ,  char* string ,  const char* format )   {  va_list args ;  int j ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( j  =  0 ;  j < outputs[id].num ;  j++ )   {  FILE* file  =  outputs[id].files[j] ;  va_start ( args ,  format )  ;  fprintf ( file ,  ""%s DEBUG  ( %i ) : "" ,  sim_time_string (  )  ,   ( int ) sim_node (  )  )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",Vulnerable Code
+"void s_log_error ( uint16_t id ,  char* string ,  const char* format )   {  va_list args ;  int j ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( j  =  0 ;  j < outputs[id].num ;  j++ )   {  FILE* file  =  outputs[id].files[j] ;  va_start ( args ,  format )  ;  fprintf ( file ,  ""ERROR  ( %j ) : "" ,   ( int ) sim_node (  )  )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",Vulnerable Code
+"void s_log_debug_clear ( uint16_t id ,  char* string ,  const char* format  )   {  va_list args ;  int j ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( j  =  0 ;  j < outputs[id].num ;  j++ )   {  FILE* file  =  outputs[id].files[j] ;  va_start ( args ,  format )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",Vulnerable Code
+"void tosthread_main ( void* arg )   {  tosthread_create ( &printf_thread ,  thread_run ,  NULL ,  200 )  ;  }",Benign Code
+sf.process (  )  ;  throttle.initialize (  )  ;  while ( t->time (  )   <  600 * t->ticksPerSecond (  )  )   {  throttle.checkThrottle (  )  ;  sf.process (  )  ;  t->runNextEvent (  )  ;  } },Benign Code
+void bind_thread ( void* arg )   {  int i ;  for ( x = 0 ;  x < 4 ;  x++ )   {  led1Toggle (  )  ;  tosthread_sleep ( 1000 )  ;  } },Benign Code
+"int order_opts ( void *a ,  void *b )   {  if  ( !a || !b )  return a  <  b ? -1 : 1 ;  if  ( COAP_OPTION_KEY ( * ( coap_option * ) a )   <  COAP_OPTION_KEY ( * ( coap_option * ) b )  )  return -1 ;  return COAP_OPTION_KEY ( * ( coap_option * ) a )   =  =  COAP_OPTION_KEY ( * ( coap_option * ) b )  ;  }",Benign Code
+"memcpy ( addrstr ,  server -> s ,  server -> length )  ; ",Vulnerable Code
+"memcpy ( addrstr ,  ""localhost"" ,  9 )  ; ",Vulnerable Code
+"memcpy ( dst ,  ainfo -> ai_addr ,  len )  ; ",Vulnerable Code
+"memcpy ( COAP_OPTION_DATA ( *option )  ,  data ,  length )  ; ",Vulnerable Code
+"memcpy ( buf ,  test_cases [i] .pack ,  test_cases [i] .pack_len )  ; ",Vulnerable Code
+"memcpy ( addr -> s6_addr ,  ctx.s6_addr ,  prefix_options [context] .pfx_len / 8 )  ; ",Vulnerable Code
+"memcpy ( data ,  readptr ,  r_len )  ; ",Vulnerable Code
+"memcpy ( &new_sock -> r_ep.sin6_addr ,  &iph -> ip6_src ,  16 )  ; ",Vulnerable Code
+"memcpy ( msg -> hdr.ip6_src.s6_addr ,  iface_addr ,  16 )  ; ",Vulnerable Code
+"memcpy ( laddr.sin6_addr.s6_addr ,  iface_addr ,  16 )  ; ",Vulnerable Code
+"memcpy ( output_file.s ,  optarg ,  output_file.length + 1 )  ; ",Vulnerable Code
+"memcpy ( payload -> resource_key ,  key ,  sizeof ( coap_key_t )  )  ; ",Vulnerable Code
+char TX_BUFFER [102520]  ; ,Vulnerable Code
+char data [dlen]  ; ,Vulnerable Code
+"char path [255]  = """" ; ",Vulnerable Code
+"char vid [8]  = """" ; ",Vulnerable Code
+"char pid [8]  = """" ; ",Vulnerable Code
+"char location [10]  = """" ; ",Vulnerable Code
+"void sim_log_debug ( uint16_t id ,  char* string ,  const char* format ,  ... )   {  va_list args ;  int i ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( i  =  0 ;  i < outputs[id].num ;  i++ )   {  FILE* file  =  outputs[id].files[i] ;  va_start ( args ,  format )  ;  fprintf ( file ,  ""%s DEBUG  ( %i ) : "" ,  sim_time_string (  )  ,   ( int ) sim_node (  )  )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",Vulnerable Code
+"void sim_log_error ( uint16_t id ,  char* string ,  const char* format ,  ... )   {  va_list args ;  int i ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( i  =  0 ;  i < outputs[id].num ;  i++ )   {  FILE* file  =  outputs[id].files[i] ;  va_start ( args ,  format )  ;  fprintf ( file ,  ""ERROR  ( %i ) : "" ,   ( int ) sim_node (  )  )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",Vulnerable Code
+"void sim_log_debug_clear ( uint16_t id ,  char* string ,  const char* format ,  ... )   {  va_list args ;  int i ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( i  =  0 ;  i < outputs[id].num ;  i++ )   {  FILE* file  =  outputs[id].files[i] ;  va_start ( args ,  format )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",Vulnerable Code
+"void Thread1_start ( void *arg )   {  message_t msg1 ;  for (  ;  ;  )   {  while  ( RadioSend ( AM_BROADCAST_ADDR ,  &msg1 ,  0 ,  21 )   =  =  EBUSY )   { } led1Off (  )  ;  if ( RadioReceive ( &msg1 ,  5000 ,  21 )   =  =  SUCCESS )   {  led1On (  )  ;  } thread_sleep ( 500 )  ;  } }",Benign Code
+char print_buf [256]  ; ,Vulnerable Code
+char addr_buf [32]  ; ,Vulnerable Code
+char data [20]  ; ,Vulnerable Code
+char *data  [i] ,Vulnerable Code
+char uri [MAX_URL_LENGTH]  ; ,Vulnerable Code
+char name [MAX_SENSOR_NAME_LENGTH]  ; ,Vulnerable Code
+char TX_BUFFER [150]  ; ,Vulnerable Code
+"CU_pSuite t_init_uri_tests ( void )   {  CU_pSuite suite ;  suite  =  CU_add_suite ( ""uri parser"" ,  NULL ,  NULL )  ;  if  ( !suite )   {  fprintf ( stderr ,  ""test suite  ( %s ) \n"" ,  CU_get_error_msg (  )  )  ;  return NULL ;  } return suite ;  }",Benign Code
+"void tosthread_main ( void* arg )   {  tosthread_create ( &init ,  init_thread ,  NULL ,  INIT_STACK_SIZE )  ;  }",Benign Code
+void init_thread ( void* arg )   {  for (  ;  ;  )   {  tosthread_join ( &blink0 )  ;  tosthread_join ( &blink1 )  ;  led2Toggle (  )  ;  } },Benign Code
+"void log_debug ( uint16_t id ,  char* string ,  const char* format )   {  va_list args ;  int k ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( k  =  0 ;  k < outputs[id].num ;  k++ )   {  FILE* file  =  outputs[id].files[k] ;  va_start ( args ,  format )  ;  fprintf ( file ,  ""%s DEBUG  ( %k ) : "" ,  sim_time_string (  )  ,   ( int ) sim_node (  )  )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",Vulnerable Code
+"void log_error ( uint16_t id ,  char* string ,  const char* format )   {  va_list args ;  int k ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( k  =  0 ;  k < outputs[id].num ;  k++ )   {  FILE* file  =  outputs[id].files[k] ;  va_start ( args ,  format )  ;  fprintf ( file ,  ""ERROR  ( %k ) : "" ,   ( int ) sim_node (  )  )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",Vulnerable Code
+ if ( *read_ID ! =  -1 )   {  break ;   }  else if (  ( *read_ID  =  =  -1 )  &&  ( error_no  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,Vulnerable Code
+ if ( *write_ID ! =  -1 )   {  break ;   }  else if (  ( *write_ID  =  =  -1 )  &&  ( error_no  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,Vulnerable Code
+ if ( *readID ! =  -1 )   {  break ;   }  else if (  ( *readID  =  =  -1 )  &&  ( error_no  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,Vulnerable Code
+if ( ERORRS  =  =  -1 )   {  *err  =  errno ;  return -1 ;   }  return ERRORS ;   } ,Vulnerable Code
+if ( errS =  =  -1 )   {  *error  =  error_ID ;  return -1 ;   }  return errS ;   } ,Vulnerable Code
+if ( ERORR  =  =  -1 )   {  *err  =  errno ;  return -1 ;   }  return ERROR ;   } ,Vulnerable Code
+if ( err  =  =  -1 )   {  *error  =  error_ID ;  return -1 ;   }  return err ;   } ,Vulnerable Code
+"if  ( Interface_ID ! =  0 )   {  memset ( Interface_ID ,  sizeof ( Interface_ID )  ,  0 )  ;   } ",Vulnerable Code
+"if  ( pInterface_ID ! =  0 )   {  memset ( pInterface_ID ,  sizeof ( pInterface_ID )  ,  0 )  ;   } ",Vulnerable Code
+"void t_parse_uri9 ( void )   {  char teststr []   =  ""http://example.com/%x"" ;  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  if  ( result  <  0 )   {  CU_PASS ( ""detected non-coap URI"" )  ;  } else  {  CU_FAIL ( ""non-coap URI not recognized"" )  ;  } }",Benign Code
+"void t_parse_uri4 ( void )   {  char teststr []   =  ""coap://:100000"" ;  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  CU_ASSERT ( result  <  0 )  ;  }",Benign Code
+"void t_parse_uri3 ( void )   {  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  if  ( result  =  =  0 )   {  CU_ASSERT ( uri.host.length  =  =  9 )  ;  } else  {  CU_FAIL ( ""uri parser error"" )  ;  } }",Benign Code
+unsigned char* pT_mp_ID ; ,Vulnerable Code
+unsigned char keys_ID ; ,Vulnerable Code
+const USBGenericDescription *pString ; ,Vulnerable Code
+unsigned int last_Line_Start ; ,Vulnerable Code
+unsigned char* pT_mp ; ,Vulnerable Code
+unsigned char keys ; ,Vulnerable Code
+"if  ( BIT_PE ( CS -> CTL0 ,  CS_CTL0_DCORES_OFS )  )   {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL5 )  ;  calVal  =  csInfo -> rDCOER_FCAL_RSEL5 ;   } ",Vulnerable Code
+else  {  dcoConst  =  * (  ( float * )  &csInformation -> rDCO_CONSTK_RSEL5 )  ;  calVal  =  csInformation  -> rDCO_FCAL_RSEL5 ;   } ,Vulnerable Code
+"if  ( BIT_PE ( CS -> CTL0 ,  CS_CTL0_DCORES_OFS )  )   {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL04 )  ;  calVal  =  csInfo -> rDCOER_FCAL_RSEL04 ;   } ",Vulnerable Code
+"void bounceThread1_start ( void *arg )   {  message_t msg1 ;  for (  ;  ;  )   {  while  ( amRadioSend ( AM_BROADCAST_ADDR ,  &msg1 ,  0 ,  21 )   =  =  EBUSY )   { } led1Off (  )  ;  if ( amRadioReceive ( &msg1 ,  5000 ,  21 )   =  =  SUCCESS )   {  led1On (  )  ;  } tosthread_sleep ( 500 )  ;  } }",Benign Code

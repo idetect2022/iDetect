@@ -1,0 +1,323 @@
+code,isMalicious
+void thread ( void* arg )   {  int s ;  for ( s = 0 ;  s < 4 ;  s++ )   {  led1Toggle (  )  ;  tosthread_sleep ( 1000 )  ;  } },Benign Code
+"void thread_main ( void* arg )   {  tosthread_create ( &printf_thread ,  thread_run ,  NULL ,  200 )  ;  }",Benign Code
+sf (  )  ;  throttle.initialize (  )  ;  while ( t->time (  )   <  600 * t->ticksPerSecond (  )  )   {  throttle.checkThrottle (  )  ;  sf.process (  )  ;  t->runNextEvent (  )  ;  } },Benign Code
+"int opts ( void *a ,  void *b )   {  if  ( !a || !b )  return a  <  b ? -1 : 1 ;  if  ( COAP_OPTION_KEY ( * ( coap_option * ) a )   <  COAP_OPTION_KEY ( * ( coap_option * ) b )  )  return -1 ;  return COAP_OPTION_KEY ( * ( coap_option * ) a )   =  =  COAP_OPTION_KEY ( * ( coap_option * ) b )  ;  }",Benign Code
+"new_node ( unsigned short key ,  unsigned int length ,  char *data )   {  coap_option *option ;  option  =  coap_malloc ( sizeof ( coap_option )  + length )  ;  if  (  !option  )  goto error ;  node  =  coap_new_listnode ( option ,  NULL )  ;  if  (  node  )  return node ;  error: coap_free (  option  )  ;  return NULL ;  } ",Benign Code
+"void USBDDriverCall_InterfaceSettingChanged (  char iface ,  char setting )   {  TRACE_INFO_WP ( ""InterfaceSettingChanged "" )  ;  }",Benign Code
+dcoConst  =  * (  ( float * )  &csInfo -> rDCOIR_CONSTK_RSEL5 )  ; ,CWE-704
+dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL )  ; ,CWE-704
+dcoConst  =  * (  ( float * )  &csInfo -> rDCOIR_CONSTK_RS )  ; ,CWE-704
+void thread ( void* arg )   {  for (  ;  ;  )   {  tosthread_join ( &blink0 )  ;  tosthread_join ( &blink1 )  ;  led2Toggle (  )  ;  } },Benign Code
+void thread ( void* arg )   {  int s ;  for ( s = 0 ;  s < 2 ;  s++ )   {  led0Toggle (  )  ;  tosthread_sleep ( 1000 )  ;  } },Benign Code
+"getenv (  ""TOSCOMMMAP""  )  ; ",CWE-807
+coap_resource_t *r ; ,CWE-783
+system ( cmd_buf )  ! =  0 ) ,CWE-78
+"if  ( BITBAND_PERI ( CS -> CTL0 ,  CS_CTL0_DCORES_OFS )  )   {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL04 )  ;  calVal  =  csInfo -> rDCOER_FCAL_RSEL04 ;   } ",CWE-704
+"memset ( addr -> s6_addr ,  0 ,  0 )  ; ",CWE-687
+"init_uri_tests ( void )   {  CU_pSuite suite ;  suite  =  CU_add_suite ( ""uri parser"" ,  NULL ,  NULL )  ;  if  ( !suite )   {  fprintf ( stderr ,  ""test suite  ( %s ) \n"" ,  CU_get_error_msg (  )  )  ;  return NULL ;  } return suite ;  }",Benign Code
+system ( command_buf )  ! =  0 ) ,CWE-78
+system ( cmd_buffer )  ! =  0 ) ,CWE-78
+"printf ( ""case %u :  buffers did not match\n"" ,  i )  ; ",CWE-686
+"printf ( "" %x\n"" ,  i ,  test_cases [i] .result_rv ,  flags )  ; ",CWE-686
+"void t_parse ( void )   {  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  if  ( result  =  =  0 )   {  CU_ASSERT ( uri.host.length  =  =  9 )  ;  } else  {  CU_FAIL ( ""uri parser error"" )  ;  } }",Benign Code
+system ( cmd_buffer_value )  ! =  0 ) ,CWE-78
+system ( cmfdsfsd_buf )  ! =  0 ) ,CWE-78
+short destPan_value  =  packet [i++]   <  <  8 | packet [i++]  ; ,CWE-768
+short destPan  =  packet [i++]   <  <  8 | packet [i++]  ; ,CWE-768
+"void thread_main ( void* arg )   {  tosthread_create ( &init ,  init_thread ,  NULL ,  INIT_STACK_SIZE )  ;  }",Benign Code
+"getenv (  ""W""  )  ; ",CWE-807
+"getenv (  ""MAP""  )  ; ",CWE-807
+dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK )  ; ,CWE-704
+dcoConst  =  * (  ( float * )  &csInfo -> rDCOIR_CONSTK_RSEL4 )  ; ,CWE-704
+"void t_parse ( void )   {  char teststr []   =  ""http://example.com/%x"" ;  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  if  ( result  <  0 )   {  CU_PASS ( ""detected non-coap URI"" )  ;  } else  {  CU_FAIL ( ""non-coap URI not recognized"" )  ;  } }",Benign Code
+"void t_parse ( void )   {  char teststr []   =  ""coap://:100000"" ;  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  CU_ASSERT ( result  <  0 )  ;  }",Benign Code
+"printf ( ""  Destination address :  0x%04hx\n"" ,  saddr )  ; ",CWE-686
+"printf ( ""  Source PAN :  0x%02hx\n"" ,  srcPan )  ; ",CWE-686
+"printf ( ""Counter :  %lu\n"" ,  counter++ )  ; ",CWE-686
+int main ( void )   {  volatile uint32_t i ;  MAP_WDT_A_holdTimer (  )  ;  for  ( k  =  0 ;  k  <  32 ;  k++ )   {  dmaTxData [k]   =  0x80 + i ;  dmaRxData [k]   =  0x8f ;  } },Benign Code
+"int opts ( void *x ,  void *z )   {  if  ( !x || !z )  return z  <  x ? -1 : 1 ;  if  ( COAP_OPTION_KEY ( * ( coap_option * ) x )   <  COAP_OPTION_KEY ( * ( coap_option * ) x )  )  return -1 ;  return COAP_OPTION_KEY ( * ( coap_option * ) x )   =  =  COAP_OPTION_KEY ( * ( coap_option * ) z )  ;  }",Benign Code
+"void t_parse ( void )   {  char teststr []   =  ""http://example.com/%7E%AB%13"" ;  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  if  ( result  <  0 )   {  CU_PASS ( ""detected non-coap URI"" )  ;  } else  {  CU_FAIL ( ""non-coap URI not recognized"" )  ;  } }",Benign Code
+ if ( *readFD ! =  -1 )   {  break ;   }  else if (  ( *readFD  =  =  -1 )  &&  ( errno  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,CWE-571
+ if ( *writeFD ! =  -1 )   {  break ;   }  else if (  ( *writeFD  =  =  -1 )  &&  ( errno  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,CWE-571
+"while  (  ( *bufPtr ++ ! =  '\n' )  &&  ( length++  <  255 )  )  ;  buffer [length]   =  '\0' ;  message  =   ( length  =  =  1 )  ? """"  :  buffer ;  return true ;  ",CWE-571
+dcoConst  =  * (  ( float * )  &csInfo -> rDCOIR_CONSTK_RSEL5 )  ; ,CWE-704
+"if  ( BITBAND_PERI ( CS -> CTL0 ,  CS_CTL0_DCORES_OFS )  )   {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL5 )  ;  calVal  =  csInfo -> rDCOER_FCAL_RSEL5 ;   } ",CWE-704
+else  {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOIR_CONSTK_RSEL5 )  ;  calVal  =  csInfo -> rDCOIR_FCAL_RSEL5 ;   } ,CWE-704
+if (  ( serialReadFD ! =  -1 )  ||  ( serialWriteFD ! =  -1 )  )   {  r  =  disconnect ( &err )  ; ,CWE-563
+action  =  NONE ;  action  =  NONE ; ,CWE-563
+"if  ( Interfaces ! =  0 )   {  memset ( Interfaces ,  sizeof ( Interfaces )  ,  0 )  ;   } ",CWE-687
+"if  ( pInterfaces ! =  0 )   {  memset ( pInterfaces ,  sizeof ( pInterfaces )  ,  0 )  ;   } ",CWE-687
+"printf ( "" got :  %li\n"" ,  i ,  test_cases [i] .result_len ,   ( rv_buf )  )  ; ",CWE-686
+"int RandomInt ( int lower , int upper )   {  return (  ( int )  ( RandomUniform (  )  *  ( upper - lower + 1 )  )  + lower )  ;   } ",CWE-561
+"double RandomDouble ( double lower , double upper )   {  return (  ( upper - lower )  * RandomUniform (  )  + lower )  ;   } ",CWE-561
+"printf ( ""Packet format error :  read packet length  ( %hhx )  is different than expected from frame  ( %hhx ) .\n"" ,  plen ,  len )  ; ",CWE-686
+"printf ( ""  Sequence number :  0x%hhx\n"" ,  seqno )  ; ",CWE-686
+" printf ( ""  Destination PAN :  0x%02hx\n"" ,  destPan )  ; ",CWE-686
+"data -> newram  =  0 ;  if  ( data_value -> newraw )   {  Py_INCREF ( data -> newraw )  ;  data -> newargs  =  Py_Tuple_New ( 1 )  ;  PyTuple_SetItem ( data -> newargs ,  0 ,  obj )  ;   } ",CWE-570
+"data -> newraw  =  0 ;  if  ( data -> newraw )   {  Py_INCREF ( data -> newraw )  ;  data -> newargs  =  PyTuple_New ( 1 )  ;  PyTuple_SetItem ( data -> newargs ,  0 ,  obj )  ;   } ",CWE-570
+extern uint32_t __data_start__ ;  extern uint32_t __data_end__ ;  from  =  &__data_load__ ;  to  =  &__data_start__ ;  ;  while  ( to  <  &__data_end__ )   {  *to++  =  *from++ ;   } ,CWE-570
+"printf ( ""%d\t"" , desiredFreq )  ; ",CWE-686
+"printf ( ""%d\t"" , ActualChannel )  ; ",CWE-686
+"fprintf ( stderr , ""Frequency %d not in range 300000000 Hz - 1000000000 Hz\n"" , DesiredFreq )  ; ",CWE-686
+"sprintf (  buf ,  ""%ld"" ,  * ( DWORD* ) _data  )  ; ",CWE-686
+"printf ( ""flags :  0x%x ( 0x%x )  len :  %li\n"" ,  flags ,  test_cases [i] .result_rv ,  rv - buf  )  ; ",CWE-686
+"char seqno  =  packet[i++] ;  printf ( "" Sequence number: 0x%hhx\n"" ,  seqno )  ; ",CWE-686
+"char seq_ID  =  packet[i++] ;  printf ( "" Sequence number: 0x%hhx\n"" ,  seq_ID )  ; ",CWE-686
+struct ip_iovec *iov  =   ( struct ip_iovec * )  ( buf + alen - sizeof ( struct ip_iovec )  )  ;  if  ( buf  =  =  NULL )  return NULL ; ,CWE-682
+if  ( termination  =  =  NULL )   {  namePos  =  termination + 1 ;   } ,CWE-682
+"if  ( termination  =  =  NULL )   {  strcpy ( newName ,  namePos )  ;   }  namePos  =  termination + 1 ;   } ",CWE-682
+usleep ( 10000 )  ; ,CWE-676
+void DefaultUsageFaultHandler (  )   {  while ( 1 )   {  }   } ,CWE-561
+void disable_disk (  )   {  atomic disk_available  =  FALSE ;  disk_initialized  =  FALSE ;  call diskIOStdControl.stop (  )  ;   } ,CWE-561
+void dock_disk (  )   {  atomic disk_available  =  FALSE ;  call diskIOStdControl.start (  )  ;   } ,CWE-561
+if ( *readFD ! =  -1 )   {  break ;   }  else if (  ( *readFD  =  =  -1 )  &&  ( errno  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,CWE-571
+if ( *writeFD ! =  -1 )   {  break ;   }  else if (  ( *writeFD  =  =  -1 )  &&  ( errno  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,CWE-571
+channel -> size  =  DEFAULT_CHANNEL_SIZE ;  channel -> outputs  =   ( FILE** ) malloc ( sizeof ( FILE* )  * channel -> size )  ; ,CWE-570
+ if  (   ( 0 <  =  cur_t )  &&  ( cur_t  <  NOISE_HISTORY )   ) ,CWE-570
+noise_hash -> size  =  NOISE_DEFAULT_ELEMENT_SIZE ;  noise_hash -> elements  =   ( char * ) malloc ( sizeof ( char ) *noise_hash -> size )  ; ,CWE-570
+"void thread_ID ( void* arg )   {  tosthread_create ( &printf_thread ,  thread_run ,  NULL ,  300 )  ;  }",Benign Code
+"void init ( void * up ,  const msp432_usci_config_t *config ,  bool isB )   {  if  ( isB )   {  BPTR ( up ) ->CTLW0  =  config->ctlw0 | EUSCI_B_CTLW0_SWRST ;  BPTR ( up ) ->BRW  =  config->brw ;  BPTR ( up ) ->I2COA0  =  config->i2coa ;  return ;  } APTR ( up ) ->CTLW0  =  config->ctlw0 | EUSCI_B_CTLW0_SWRST ;  APTR ( up ) ->BRW  =  config->brw ;  APTR ( up ) ->MCTLW  =  config->mctlw ;  }",Benign Code
+if ( error  =  =  -1 )   {  *err  =  errno ;  return -1 ;   }  return error ;   } ,CWE-457
+extern uint32_t __bss_start__ ;  extern uint32_t __bss_end__ ;  to  =  &__bss_start__ ;  while  ( to  <  &__bss_end__ )   {  *to++  =  0 ;   } ,CWE-570
+"struct ip_iovec *v ,  *tail ; ",CWE-563
+ for  ( int i  =  0 ;  i  <  5000 ;  i++ )   {  t -> runNextEvent (  )  ;   }  int x  =  2 ;  for  ( int i  =  0 ;  i  <  5000 ;  i++ )   {  t -> runNextEvent (  )  ;   } ,CWE-563
+ uint32_t NRef  =   (  ( desiredFreq + IF )  )  ;  NRef  =   (  ( desiredFreq + IF )   <  <  2 )  / FRef ; ,CWE-563
+ ActualFreq  =  cc1000ComputeFreq ( DesiredFreq )  ; ,CWE-563
+"void Thread2_start ( void *arg )   {  message_t msg2 ;  for (  ;  ;  )   {  while  ( RadioSend ( AM_BROADCAST_ADDR ,  &msg2 ,  0 ,  22 )   =  =  EBUSY )   { } led2Off (  )  ;  if ( RadioReceive ( &msg2 ,  5000 ,  22 )   =  =  SUCCESS )   {  led2On (  )  ;  } thread_sleep ( 500 )  ;  } }",Benign Code
+"THREAD ( coap_server_process ,  ev ,  data )   {  PROCESS_BEGIN (  )  ;  init_coap (  )  ;  init_resources ( coap_context )  ;  if  ( !coap_context )   {  coap_log ( LOG_EMERG ,  ""\n"" )  ;  PROCESS_EXIT (  )  ;  } etimer_set ( &dirty_timer ,  30 * CLOCK_SECOND )  ;  while ( 1 )   {  PROCESS_YIELD (  )  ;  if ( ev  =  =  tcpip_event )   {  coap_read ( coap_context )  ;  coap_dispatch ( coap_context )  ;  } else if  ( ev  =  =  PROCESS_EVENT_TIMER && etimer_expired ( &dirty_timer )  )   {  time_resource->dirty  =  1 ;  etimer_reset ( &dirty_timer )  ;  } } PROCESS_END (  )  ;  ",Benign Code
+buf + =  LOWMSG_FRAGN_LEN ; ,CWE-563
+len - =  LOWMSG_FRAGN_LEN ; ,CWE-563
+"uint8_t buf [128]  ,  *rp ,  unpack [512]  ,  more_data [1500]  ; ",CWE-563
+"char c ,  val ; ",CWE-563
+VecRegValue RegKey :  : getValues (  )  const  {  VecRegValue v ;  DWORD i  =  0 ; ,CWE-561
+int get_ser_fd (  )   {  return serial_source_fd ( ser_src )  ;   } ,CWE-561
+int ipv6_addr_is_zero ( const ip6_addr_t *addr )   {  int i ;  for  ( i = 0 ; i < 16 ; i++ )   {  if  ( addr -> addr [i]  )   {  return 0 ;   }   }  return 1 ;   } ,CWE-561
+"int cmp_ipv6_addr ( const ip6_addr_t *addr1 ,  const ip6_addr_t *addr2 )   {  return memcmp ( addr1 ,  addr2 ,  sizeof ( ip6_addr_t )  )  ;  ",CWE-561
+"void thread_main ( void* arg )   {  amRadioStart (  )  ;  thread_create ( &bounceThread0 ,  bounceThread0_start ,  NULL ,  300 )  ;  thread_create ( &bounceThread1 ,  bounceThread1_start ,  NULL ,  300 )  ;  thread_create ( &bounceThread2 ,  bounceThread2_start ,  NULL ,  300 )  ;  }",Benign Code
+"void Thread0_start ( void *arg )   {  message_t msg0 ;  for (  ;  ;  )   {  while  ( RadioSend ( AM_BROADCAST_ADDR ,  &msg0 ,  0 ,  20 )   =  =  EBUSY )   { } led0Off (  )  ;  if ( RadioReceive ( &msg0 ,  5000 ,  20 )   =  =  SUCCESS )   {  led0On (  )  ;  } thread_sleep ( 500 )  ;  } }",Benign Code
+"void sim_end (  )  __attribute__  (  ( C ,  spontaneous )  )   {  sim_queue_init (  )  ;   } ",CWE-561
+void DefaultHandler (  )   {   } ,CWE-561
+void DefaultHardFaultHandler (  )   {  while ( 1 )   {  }   } ,CWE-561
+void DefaultMpuFaultHandler (  )   {  while ( 1 )   {  }   } ,CWE-561
+void DefaultBusFaultHandler (  )   {  while ( 1 )   {  }   } ,CWE-561
+"new_option_node ( unsigned short key ,  unsigned int length ,  char *data )   {  coap_option *option ;  option  =  coap_malloc ( sizeof ( coap_option )  + length )  ;  if  (  !option  )  goto error ;  node  =  coap_new_listnode ( option ,  NULL )  ;  if  (  node  )  return node ;  error: coap_free (  option  )  ;  return NULL ;  } ",Benign Code
+"void USBDDriverCallbacks_InterfaceSettingChanged (  char iface ,  char setting )   {  TRACE_INFO_WP ( ""InterfaceSettingChanged "" )  ;  }",Benign Code
+typedef struct params  {  thread_t receive_handle ; thread_t snoop_handle ;  thread_t send_handle ;  mutex_t mutex ;  condvar_t condvar ;  message_t shared_msgs [MSG_QUEUE_SIZE]  ;  uint8_t shared_msg_queue_size ;  uint8_t shared_msg_queue_index ;  } bs_params_t ; ,Benign Code
+void disable_dock (  )   {  call diskInput_Output.disableDock (  )  ;   } ,CWE-561
+void enable_dock (  )   {  call diskIO.enableDock (  )  ;   } ,CWE-561
+"if (  ( txframe  =  =  NULL )  ||  ( txframe -> L1  <  4 )  ||  (  ( txframe -> L1 & 1 )  ! =  0 )  ||  ( rxframe  =  =  NULL )  )   {  cerr  <  <  ""BaseSerial not fulfilled ,  ""  <  <  "" txFrame :  ""  <  <  txframe  <  <  "" rxFrame :  ""  <  <  rxframe  <  <  "" txframe -> L1 :  ""  <  <   ( unsigned )  txframe -> L1  <  <  endl ;  return -1 ;   } ",CWE-476
+"if (  ( frame  =  =  NULL )  ||  ( frame -> L1 < 4 )  ||  (  ( frame -> L1 & 1 )  ! =  0 )  ||  ( frame  =  =  NULL )  )   {   <<  "" frame -> L1: ""  <<   ( unsigned )  frame -> L1  <<  endl ;  return -1 ;   } ",CWE-476
+"if (  ( tframe  =  =  NULL )  ||  ( tframe -> L1 < 4 )  ||  (  ( tframe -> L1 & 1 )  ! =  0 )  ||  ( tframe  =  =  NULL )  )   {   <<  "" tframe -> L1: ""  <<   ( unsigned )  tframe -> L1  <<  endl ;  return -1 ;   } ",CWE-476
+void* data  =  payload +  ( dissemination_message_data_offsetbits ( 0 )  / 8 )  ; ,CWE-467
+if ( r  =  =  -1 )   {  *err  =  errno ;  return -1 ;   } ,CWE-457
+"memcpy ( &node -> local ,  &dst ,  sizeof ( coap_address_t )  )  ; ",CWE-457
+Segment (  )   {  startAddr  =  0 ;  len  =  0 ;   } ,CWE-398
+virtual ~BaseSerial (  )   {  int r ;  int err ;  if (  ( serialReadFD ! =  -1 )  ||  ( serialWriteFD ! =  -1 )  )   {  r  =  disconnect ( &err )  ;   }   } ,CWE-398
+"Parameters :  : Parameters ( int argc ,  char **argv ) ",CWE-398
+"if (  ( txframe  =  =  NULL )  ||  ( txframe -> L1 < 4 )  ||  (  ( txframe -> L1 & 1 )  ! =  0 )  ||  ( txframe  =  =  NULL )  )   {   <<  "" txframe -> L1: ""  <<   ( unsigned )  txframe -> L1  <<  endl ;  return -1 ;   } ",CWE-476
+uint8_t *buf  =  packed -> data_Value ;   if  ( packed  =  =  NULL )  return 1 ; ,CWE-476
+uint16_t len  =  packed -> len ;  if  ( packed  =  =  NULL )  return 1 ; ,CWE-476
+long long laddress  =  0 ; ,CWE-398
+if ( r  =  =  -1 )   {  *err  =  err_ID ;  return -1 ;   }  return r ;   } ,CWE-457
+"void bounceThread2_start ( void *arg )   {  message_t msg2 ;  for (  ;  ;  )   {  while  ( amRadioSend ( AM_BROADCAST_ADDR ,  &msg2 ,  0 ,  22 )   =  =  EBUSY )   { } led2Off (  )  ;  if ( amRadioReceive ( &msg2 ,  5000 ,  22 )   =  =  SUCCESS )   {  led2On (  )  ;  } tosthread_sleep ( 500 )  ;  } }",Benign Code
+"PROCESS_THREAD ( coap_server_process ,  ev ,  data )   {  PROCESS_BEGIN (  )  ;  init_coap (  )  ;  init_resources ( coap_context )  ;  if  ( !coap_context )   {  coap_log ( LOG_EMERG ,  ""\n"" )  ;  PROCESS_EXIT (  )  ;  } etimer_set ( &dirty_timer ,  30 * CLOCK_SECOND )  ;  while ( 1 )   {  PROCESS_YIELD (  )  ;  if ( ev  =  =  tcpip_event )   {  coap_read ( coap_context )  ;  coap_dispatch ( coap_context )  ;  } else if  ( ev  =  =  PROCESS_EVENT_TIMER && etimer_expired ( &dirty_timer )  )   {  time_resource->dirty  =  1 ;  etimer_reset ( &dirty_timer )  ;  } } PROCESS_END (  )  ;  ",Benign Code
+"Suite t_init_uri_tests ( void )   {  CU_pSuite suite ;  suite  =  CU_add_suite ( ""uri parser"" ,  NULL ,  NULL )  ;  if  ( !suite )   {  fprintf ( stderr ,  ""test suite  ( %s ) \n"" ,  CU_get_error_msg (  )  )  ;  return NULL ;  } return suite ;  }",Benign Code
+if ( r  =  =  -1 )   {  *err  =  errno ;  return -1 ;   }  return r ;   } ,CWE-457
+"memset ( frame ,  0 ,  sizeof ( frame )  )  ; ",CWE-467
+void* data  =  payload +  ( dissemination_message_data_offsetbits ( 0 )  / 8 )  ; ,CWE-467
+void* payload  =   ( void* ) myPacket +  ( spacket_data_offsetbits ( 0 )  / 8 )  ; ,CWE-467
+"enc  =  COAP_PSEUDOFP_ENCODE_8_4_DOWN ( value , ls )  ; ",CWE-457
+" if  ( !listen_addr )   {  coap_log ( LOG_EMERG ,  ""no listen address specified\n"" )  ;  return NULL ;   } ",CWE-401
+long long laddr  =  0 ; ,CWE-398
+"fopen ( filename_buf ,  ""a"" )  ; ",CWE-362
+"inputfile  =  fopen ( filename ,  ""r"" )  ; ",CWE-362
+catch (  std :  : runtime_error error  )   {   } ,CWE-398
+"else if (  opt  =  =  ""-c""  )   {  compact  =  true ;   } ",CWE-398
+"catch (  std :  : runtime_error errors  )   {  d.comm  =  ""no_comm"" ;   } ",CWE-398
+catch (  std :  : runtime_error error_ID  )   {   } ,CWE-398
+catch (  std :  : runtime_error Description  ) ,CWE-398
+"if  ( BIT_PERI ( CS -> CTL0 ,  CS_CTL0_DCORES_OFS )  )   {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL5 )  ;  calVal  =  csInfo -> rDCOER_FCAL_RSEL5 ;   } ",CWE-704
+else  {  dcoConst  =  * (  ( float * )  &csInfo -> rDCO_CONSTK_RSEL5 )  ;  calVal  =  csInfo -> rDCO_FCAL_RSEL5 ;   } ,CWE-704
+"if  ( BIT_PERI ( CS -> CTL0 ,  CS_CTL0_DCORES_OFS )  )   {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL04 )  ;  calVal  =  csInfo -> rDCOER_FCAL_RSEL04 ;   } ",CWE-704
+catch (  std :  : runtime_error error_value  )   {   } ,CWE-398
+catch (  std :  : runtime_error Message  )   {   } ,CWE-398
+"int main ( int argc ,  char **argv )   {  struct ieee154_add ;  struct lowpan_reconstruct recon ;  char print_buf [256]  ;  uint8_t *cur ;  int idx  =  0 ,  rv ;  int ret ; ",CWE-398
+virtual ~Serial (  )   {  int error ;  int err ;  if (  ( serialReadFD ! =  -1 )  ||  ( serialWriteFD ! =  -1 )  )   {  error  =  disconnect ( &err )  ;   }   } ,CWE-398
+unsigned char buf [4]  ; ,CWE-398
+coap_list_t *node ; ,CWE-398
+unsigned char portbuf [2]  ;  ,CWE-398
+"stat ( file ,  &statdabuf ) ",CWE-367
+"stat  ( &url [1]  ,  &buf )  ) ",CWE-367
+unsigned char _buf [BUFSIZE]  ;  unsigned char *buf  =  _buf ;  size_t buflen ;  int res ; ,CWE-398
+static unsigned char buf [4]  ; ,CWE-398
+unsigned short opt ; ,CWE-398
+PySwigClientData *data  =   ( PySwigClientData * ) ty -> clientdata ; ,CWE-398
+PySwigClientData *data  =  desc ?  ( PySwigClientData * )  desc -> clientdata  :  0 ; ,CWE-398
+PySwigClientData *data  =   ( PySwigClientData * ) malloc ( sizeof ( PySwigClientData )  )  ; ,CWE-398
+PySwigObject *sobj  =   ( PySwigObject * )  v ; ,CWE-398
+PySwigClientData *data  =  ty ?  ( PySwigClientData * )  ty -> clientdata  :  0 ; ,CWE-398
+const USBGenericDescriptor *pString ; ,CWE-398
+ if ( *writeID ! =  -1 )   {  break ;   }  else if (  ( *writeID  =  =  -1 )  &&  ( error_no  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,CWE-571
+"if (  ( txframe  =  =  NULL )  ||  ( txframe -> D1 < 4 )  ||  (  ( txframe -> D1 & 1 )  ! =  0 )  ||  ( txframe  =  =  NULL )  )   {   <<  "" txframe -> D1: ""  <<   ( unsigned )  txframe -> D1  <<  endl ;  return -1 ;   } ",CWE-476
+"if (  ( txframe  =  =  NULL )  ||  ( txframe -> X1 < 4 )  ||  (  ( txframe -> X1 & 1 )  ! =  0 )  ||  ( txframe  =  =  NULL )  )   {   <<  "" txframe -> X1: ""  <<   ( unsigned )  txframe -> X1  <<  endl ;  return -1 ;   } ",CWE-476
+"if (  ( txframe  =  =  NULL )  ||  ( txframe -> S1 < 4 )  ||  (  ( txframe -> S1 & 1 )  ! =  0 )  ||  ( txframe  =  =  NULL )  )   {   <<  "" txframe -> S1: ""  <<   ( unsigned )  txframe -> S1  <<  endl ;  return -1 ;   } ",CWE-476
+unsigned int lastLineStart ; ,CWE-398
+unsigned char* pTmp ; ,CWE-398
+unsigned char key ; ,CWE-398
+"stat  ( &url [1]  ,  &buf )  ) ",CWE-367
+"stat ( filename ,  &statbuf ) ",CWE-367
+"fd = open ( temppath ,  O_RDONLY )  ; ",CWE-362
+"FILE *fp  =  fopen ( file ,  ""r"" )  ; ",CWE-362
+"file  =  fopen  ( &url [1]  ,  ""rb"" )  ; ",CWE-362
+gethostbyname ( host_Name)  ; ,CWE-350
+gethostbyname ( host_Data)  ; ,CWE-350
+gethostbyname ( host_Address)  ; ,CWE-350
+gethostbyname ( File_Address )  ; ,CWE-350
+" ( unsigned int )  random  (  )  , ",CWE-327
+srandom  (  ( unsigned int )  time  ( NULL )  )  ; ,CWE-327
+srand (  ( unsigned long )  ( Value )  ) ,CWE-327
+srand  (  time ( NULL )   ) ,CWE-327
+gets ( char * NTS __str )  ; ,CWE-20
+gets ( char *__str )  ; ,CWE-20
+typedef struct bs_params  {  tosthread_t receive_handle ;  tosthread_t snoop_handle ;  tosthread_t send_handle ;  mutex_t mutex ;  condvar_t condvar ;  message_t shared_msgs [MSG_QUEUE_SIZE]  ;  uint8_t shared_msg_queue_size ;  uint8_t shared_msg_queue_index ;  } bs_params_t ; ,Benign Code
+"void tosthread_main ( void* arg )   {  amRadioStart (  )  ;  tosthread_create ( &bounceThread0 ,  bounceThread0_start ,  NULL ,  300 )  ;  tosthread_create ( &bounceThread1 ,  bounceThread1_start ,  NULL ,  300 )  ;  tosthread_create ( &bounceThread2 ,  bounceThread2_start ,  NULL ,  300 )  ;  }",Benign Code
+"void bounceThread0_start ( void *arg )   {  message_t msg0 ;  for (  ;  ;  )   {  while  ( amRadioSend ( AM_BROADCAST_ADDR ,  &msg0 ,  0 ,  20 )   =  =  EBUSY )   { } led0Off (  )  ;  if ( amRadioReceive ( &msg0 ,  5000 ,  20 )   =  =  SUCCESS )   {  led0On (  )  ;  } tosthread_sleep ( 500 )  ;  } }",Benign Code
+"vfscanf ( FILE * ONE __stream ,  const char * NTS __fmt ,  va_list __ap )  ; ",CWE-20
+"fscanf ( FILE * ONE __stream ,  const char * NTS __fmt ,  ... )  ; ",CWE-20
+"vscanf ( const char * NTS __fmt ,  va_list __ap )  ; ",CWE-20
+"sscanf ( const char * NTS __buf ,  const char * NTS __fmt ,  ... ) ",CWE-20
+getchar ( void )  ; ,CWE-20
+"vfscanf ( FILE *__stream ,  const char *__fmt ,  va_list __ap )  ; ",CWE-20
+"fscanf ( FILE *__stream ,  const char *__fmt ,  ... )  ; ",CWE-20
+strlen ( str_temp ) ,CWE-126
+"strlen ( ""tframe"" )   =  =  0",CWE-126
+strlen ( resource ) ,CWE-126
+void blink0_thread ( void* arg )   {  int i ;  for ( i = 0 ;  i < 2 ;  i++ )   {  led0Toggle (  )  ;  tosthread_sleep ( 1000 )  ;  } },Benign Code
+void blink1_thread ( void* arg )   {  int i ;  for ( i = 0 ;  i < 4 ;  i++ )   {  led1Toggle (  )  ;  tosthread_sleep ( 1000 )  ;  } },Benign Code
+"scanf ( const char *__fmt ,  ... )  ; ",CWE-20
+"vscanf ( const char *__fmt ,  va_list __ap )  ; ",CWE-20
+"sscanf ( const char *__buf ,  const char *__fmt ,  ... )  ; ",CWE-20
+"getopt ( argc ,  argv ,  ""A : g : p : v : "" )  ) ",CWE-20
+fgetc ( FILE * ONE __stream )  ; ,CWE-20
+getc ( __stream )  fgetc ( __stream ) ,CWE-20
+data_int  =  atoi (  _data  )  ; ,CWE-190
+atoi ( argv [2]  ) ,CWE-190
+atoi ( argv [3]  ) ,CWE-190
+atoi ( argv [4]  ) ,CWE-190
+DesiredFreq  =  atoi ( argv [0]  )  ; ,CWE-190
+"vfprintf ( FILE * ONE __stream ,  const char * NTS __fmt ,  va_list __ap ) ",CWE-134
+"printf ( const char * NTS __fmt ,  ... )  ; ",CWE-134
+"memcpy ( uri -> resource_key ,  key ,  sizeof ( coap_key_t )  )  ; ",CWE-120
+"memcpy ( payload -> data ,  data ,  len )  ; ",CWE-120
+"memcpy ( test_payload -> data ,  data ,  len )  ; ",CWE-120
+char uri [MAX_URI_LENGTH]  ; ,CWE-119
+char TX_BUFFER [100000]  ; ,CWE-119
+"vprintf ( const char * NTS __fmt ,  va_list __ap )  ; ",CWE-134
+"sprintf ( char * NTS __s ,  const char * NTS __fmt ,  … )  ; ",CWE-134
+printf ( print_buf )  ; ,CWE-134
+"fprintf ( stderr , ldev )  ; ",CWE-134
+"vsnprintf ( char *pStr ,  size_t length ,  const char *pFormat ,  va_list ap",CWE-134
+"snprintf ( char * NTS __s ,  size_t __n ,  const char * NTS __fmt ,  ... )  ; ",CWE-134
+"vsprintf ( char * NTS __s ,  const char * NTS __fmt ,  va_list ap )  ; ",CWE-134
+"vsnprintf ( char * NTS __s ,  size_t __n ,  const char * NTS __fmt ,  va_list ap )  ; ",CWE-134
+"memcpy ( writeptr ,  data ,  w_len )  ; ",CWE-120
+"memcpy ( &msg -> ip6_hdr.ip6_dst ,  &sock -> r_ep.sin6_addr ,  16 )  ; ",CWE-120
+"memcpy ( &msg -> ip6_hdr.ip6_dst ,  &iph -> ip6_src ,  16 )  ; ",CWE-120
+"memcpy ( &this_conn -> r_ep.sin6_addr ,  &iph -> ip6_src ,  16 ) ",CWE-120
+"fprintf ( FILE * ONE __stream ,  const char * NTS __fmt ,  ... )  ; ",CWE-134
+"printf (  fmt ,  ""Reference"" ,  ""CommPort"" ,  ""Description""  )  ; ",CWE-134
+"printf (  fmt ,  i -> id.c_str (  )  ,  comm.c_str (  )  ,  i -> info.c_str (  )   )  ; ",CWE-134
+"printf ( FMT ,  args ... )   ; ",CWE-134
+strlen  ( session -> value_1 ) ,CWE-126
+strlen  ( reply ) ,CWE-126
+strlen  ( session -> value_2 ) ,CWE-126
+"memcpy ( &s -> peer ,  peer ,  sizeof ( coap_address_t )  )  ; ",CWE-120
+"memcpy ( s -> token ,  request -> hdr -> token ,  request -> hdr -> token_length )  ; ",CWE-120
+"memcpy ( &s -> id ,  &id ,  sizeof ( coap_tid_t )  )  ; ",CWE-120
+"memcpy ( buf ,  "" ( unknown address type ) "" ,  min ( 22 ,  len )  )  ; ",CWE-120
+strlen ( teststr ) ,CWE-126
+strlen ( ptr ) ,CWE-126
+strlen ( q )  ! =  0,CWE-126
+strlen ( arg ) ,CWE-126
+strlen ( INDEX ) ,CWE-126
+"strlen ( coap_response_phrase ( response -> hdr -> code )  )  , ",CWE-126
+strlen  ( me ) ,CWE-126
+strlen  ( form ) ,CWE-126
+"memcpy ( packet ,  &msg -> hdr ,  sizeof ( struct ip6_hdr )  )  ; ",CWE-120
+"if  ( Interface ! =  0 )   {  memset ( Interface ,  sizeof ( Interface )  ,  0 )  ;   } ",CWE-687
+"if  ( pInterface ! =  0 )   {  memset ( pInterface ,  sizeof ( pInterface )  ,  0 )  ;   } ",CWE-687
+const USBGenericDescription_ID *pString ; ,CWE-398
+unsigned int last_Line_Start ; ,CWE-398
+int main ( void )   {  volatile uint32_t i ;  MAP_WDT_A_holdTimer (  )  ;  for  ( i  =  0 ;  i  <  32 ;  i++ )   {  dmaTxData [i]   =  0x80 + i ;  dmaRxData [i]   =  0x8f ;  } },Benign Code
+"test ( void )   {  pSuite suite ;  suite  =  add_suite ( ""uri parser"" ,  NULL ,  NULL )  ;  if  ( !suite )   {  fprintf ( stderr ,  ""test suite  ( %s ) \n"" ,  get_error_msg (  )  )  ;  return NULL ;  } return suite ;  }",Benign Code
+"void t_parse_uri8 ( void )   {  char teststr []   =  ""http://example.com/%7E%AB%13"" ;  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  if  ( result  <  0 )   {  CU_PASS ( ""detected non-coap URI"" )  ;  } else  {  CU_FAIL ( ""non-coap URI not recognized"" )  ;  } }",Benign Code
+"memcpy ( &my_addr ,  addr ,  sizeof ( struct in6_addr )  )  ; ",CWE-120
+"memcpy ( packet ,  cur -> hdr.data ,  cur -> len )  ; ",CWE-120
+"memcpy ( packet ,  msg -> data ,  msg -> data_len )  ; ",CWE-120
+"memcpy ( &ifr6.ifr6_addr ,  addr ,  16 )  ; ",CWE-120
+"memcpy ( packet ,  &msg -> ip6_hdr ,  sizeof ( struct ip6_hdr )  )  ; ",CWE-120
+"void log_debug_clear ( uint16_t id ,  char* string ,  const char* format  )   {  va_list args ;  int k ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( k  =  0 ;  k < outputs[id].num ;  k++ )   {  FILE* file  =  outputs[id].files[k] ;  va_start ( args ,  format )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",CWE-664
+"void s_log_debug ( uint16_t id ,  char* string ,  const char* format )   {  va_list args ;  int j ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( j  =  0 ;  j < outputs[id].num ;  j++ )   {  FILE* file  =  outputs[id].files[j] ;  va_start ( args ,  format )  ;  fprintf ( file ,  ""%s DEBUG  ( %i ) : "" ,  sim_time_string (  )  ,   ( int ) sim_node (  )  )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",CWE-664
+"void s_log_error ( uint16_t id ,  char* string ,  const char* format )   {  va_list args ;  int j ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( j  =  0 ;  j < outputs[id].num ;  j++ )   {  FILE* file  =  outputs[id].files[j] ;  va_start ( args ,  format )  ;  fprintf ( file ,  ""ERROR  ( %j ) : "" ,   ( int ) sim_node (  )  )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",CWE-664
+"void s_log_debug_clear ( uint16_t id ,  char* string ,  const char* format  )   {  va_list args ;  int j ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( j  =  0 ;  j < outputs[id].num ;  j++ )   {  FILE* file  =  outputs[id].files[j] ;  va_start ( args ,  format )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",CWE-664
+"void tosthread_main ( void* arg )   {  tosthread_create ( &printf_thread ,  thread_run ,  NULL ,  200 )  ;  }",Benign Code
+sf.process (  )  ;  throttle.initialize (  )  ;  while ( t->time (  )   <  600 * t->ticksPerSecond (  )  )   {  throttle.checkThrottle (  )  ;  sf.process (  )  ;  t->runNextEvent (  )  ;  } },Benign Code
+void bind_thread ( void* arg )   {  int i ;  for ( x = 0 ;  x < 4 ;  x++ )   {  led1Toggle (  )  ;  tosthread_sleep ( 1000 )  ;  } },Benign Code
+"int order_opts ( void *a ,  void *b )   {  if  ( !a || !b )  return a  <  b ? -1 : 1 ;  if  ( COAP_OPTION_KEY ( * ( coap_option * ) a )   <  COAP_OPTION_KEY ( * ( coap_option * ) b )  )  return -1 ;  return COAP_OPTION_KEY ( * ( coap_option * ) a )   =  =  COAP_OPTION_KEY ( * ( coap_option * ) b )  ;  }",Benign Code
+"memcpy ( addrstr ,  server -> s ,  server -> length )  ; ",CWE-120
+"memcpy ( addrstr ,  ""localhost"" ,  9 )  ; ",CWE-120
+"memcpy ( dst ,  ainfo -> ai_addr ,  len )  ; ",CWE-120
+"memcpy ( COAP_OPTION_DATA ( *option )  ,  data ,  length )  ; ",CWE-120
+"memcpy ( buf ,  test_cases [i] .pack ,  test_cases [i] .pack_len )  ; ",CWE-120
+"memcpy ( addr -> s6_addr ,  ctx.s6_addr ,  prefix_options [context] .pfx_len / 8 )  ; ",CWE-120
+"memcpy ( data ,  readptr ,  r_len )  ; ",CWE-120
+"memcpy ( &new_sock -> r_ep.sin6_addr ,  &iph -> ip6_src ,  16 )  ; ",CWE-120
+"memcpy ( msg -> hdr.ip6_src.s6_addr ,  iface_addr ,  16 )  ; ",CWE-120
+"memcpy ( laddr.sin6_addr.s6_addr ,  iface_addr ,  16 )  ; ",CWE-120
+"memcpy ( output_file.s ,  optarg ,  output_file.length + 1 )  ; ",CWE-120
+"memcpy ( payload -> resource_key ,  key ,  sizeof ( coap_key_t )  )  ; ",CWE-120
+char TX_BUFFER [102520]  ; ,CWE-119
+char data [dlen]  ; ,CWE-119
+"char path [255]  = """" ; ",CWE-119
+"char vid [8]  = """" ; ",CWE-119
+"char pid [8]  = """" ; ",CWE-119
+"char location [10]  = """" ; ",CWE-119
+"void sim_log_debug ( uint16_t id ,  char* string ,  const char* format ,  ... )   {  va_list args ;  int i ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( i  =  0 ;  i < outputs[id].num ;  i++ )   {  FILE* file  =  outputs[id].files[i] ;  va_start ( args ,  format )  ;  fprintf ( file ,  ""%s DEBUG  ( %i ) : "" ,  sim_time_string (  )  ,   ( int ) sim_node (  )  )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",CWE-664
+"void sim_log_error ( uint16_t id ,  char* string ,  const char* format ,  ... )   {  va_list args ;  int i ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( i  =  0 ;  i < outputs[id].num ;  i++ )   {  FILE* file  =  outputs[id].files[i] ;  va_start ( args ,  format )  ;  fprintf ( file ,  ""ERROR  ( %i ) : "" ,   ( int ) sim_node (  )  )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",CWE-664
+"void sim_log_debug_clear ( uint16_t id ,  char* string ,  const char* format ,  ... )   {  va_list args ;  int i ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( i  =  0 ;  i < outputs[id].num ;  i++ )   {  FILE* file  =  outputs[id].files[i] ;  va_start ( args ,  format )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",CWE-664
+"void Thread1_start ( void *arg )   {  message_t msg1 ;  for (  ;  ;  )   {  while  ( RadioSend ( AM_BROADCAST_ADDR ,  &msg1 ,  0 ,  21 )   =  =  EBUSY )   { } led1Off (  )  ;  if ( RadioReceive ( &msg1 ,  5000 ,  21 )   =  =  SUCCESS )   {  led1On (  )  ;  } thread_sleep ( 500 )  ;  } }",Benign Code
+char print_buf [256]  ; ,CWE-119
+char addr_buf [32]  ; ,CWE-119
+char data [20]  ; ,CWE-119
+char *data  [i] ,CWE-119
+char uri [MAX_URL_LENGTH]  ; ,CWE-119
+char name [MAX_SENSOR_NAME_LENGTH]  ; ,CWE-119
+char TX_BUFFER [150]  ; ,CWE-119
+"CU_pSuite t_init_uri_tests ( void )   {  CU_pSuite suite ;  suite  =  CU_add_suite ( ""uri parser"" ,  NULL ,  NULL )  ;  if  ( !suite )   {  fprintf ( stderr ,  ""test suite  ( %s ) \n"" ,  CU_get_error_msg (  )  )  ;  return NULL ;  } return suite ;  }",Benign Code
+"void tosthread_main ( void* arg )   {  tosthread_create ( &init ,  init_thread ,  NULL ,  INIT_STACK_SIZE )  ;  }",Benign Code
+void init_thread ( void* arg )   {  for (  ;  ;  )   {  tosthread_join ( &blink0 )  ;  tosthread_join ( &blink1 )  ;  led2Toggle (  )  ;  } },Benign Code
+"void log_debug ( uint16_t id ,  char* string ,  const char* format )   {  va_list args ;  int k ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( k  =  0 ;  k < outputs[id].num ;  k++ )   {  FILE* file  =  outputs[id].files[k] ;  va_start ( args ,  format )  ;  fprintf ( file ,  ""%s DEBUG  ( %k ) : "" ,  sim_time_string (  )  ,   ( int ) sim_node (  )  )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",CWE-664
+"void log_error ( uint16_t id ,  char* string ,  const char* format )   {  va_list args ;  int k ;  if  ( outputs[id].files  =  =  NULL )   {  fillInOutput ( id ,  string )  ;   }  for  ( k  =  0 ;  k < outputs[id].num ;  k++ )   {  FILE* file  =  outputs[id].files[k] ;  va_start ( args ,  format )  ;  fprintf ( file ,  ""ERROR  ( %k ) : "" ,   ( int ) sim_node (  )  )  ;  vfprintf ( file ,  format ,  args )  ;  fflush ( file )  ;   }   } ",CWE-664
+ if ( *read_ID ! =  -1 )   {  break ;   }  else if (  ( *read_ID  =  =  -1 )  &&  ( error_no  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,CWE-571
+ if ( *write_ID ! =  -1 )   {  break ;   }  else if (  ( *write_ID  =  =  -1 )  &&  ( error_no  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,CWE-571
+ if ( *readID ! =  -1 )   {  break ;   }  else if (  ( *readID  =  =  -1 )  &&  ( error_no  =  =  EAGAIN )  )   {  serial_delay ( 1000000 )  ;   } ,CWE-571
+if ( ERORRS  =  =  -1 )   {  *err  =  errno ;  return -1 ;   }  return ERRORS ;   } ,CWE-457
+if ( errS =  =  -1 )   {  *error  =  error_ID ;  return -1 ;   }  return errS ;   } ,CWE-457
+if ( ERORR  =  =  -1 )   {  *err  =  errno ;  return -1 ;   }  return ERROR ;   } ,CWE-457
+if ( err  =  =  -1 )   {  *error  =  error_ID ;  return -1 ;   }  return err ;   } ,CWE-457
+"if  ( Interface_ID ! =  0 )   {  memset ( Interface_ID ,  sizeof ( Interface_ID )  ,  0 )  ;   } ",CWE-687
+"if  ( pInterface_ID ! =  0 )   {  memset ( pInterface_ID ,  sizeof ( pInterface_ID )  ,  0 )  ;   } ",CWE-687
+"void t_parse_uri9 ( void )   {  char teststr []   =  ""http://example.com/%x"" ;  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  if  ( result  <  0 )   {  CU_PASS ( ""detected non-coap URI"" )  ;  } else  {  CU_FAIL ( ""non-coap URI not recognized"" )  ;  } }",Benign Code
+"void t_parse_uri4 ( void )   {  char teststr []   =  ""coap://:100000"" ;  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  CU_ASSERT ( result  <  0 )  ;  }",Benign Code
+"void t_parse_uri3 ( void )   {  int result ;  coap_uri_t uri ;  result  =  coap_split_uri (  ( unsigned char * ) teststr ,  strlen ( teststr )  ,  &uri )  ;  if  ( result  =  =  0 )   {  CU_ASSERT ( uri.host.length  =  =  9 )  ;  } else  {  CU_FAIL ( ""uri parser error"" )  ;  } }",Benign Code
+unsigned char* pT_mp_ID ; ,CWE-398
+unsigned char keys_ID ; ,CWE-398
+const USBGenericDescription *pString ; ,CWE-398
+unsigned int last_Line_Start ; ,CWE-398
+unsigned char* pT_mp ; ,CWE-398
+unsigned char keys ; ,CWE-398
+"if  ( BIT_PE ( CS -> CTL0 ,  CS_CTL0_DCORES_OFS )  )   {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL5 )  ;  calVal  =  csInfo -> rDCOER_FCAL_RSEL5 ;   } ",CWE-704
+else  {  dcoConst  =  * (  ( float * )  &csInformation -> rDCO_CONSTK_RSEL5 )  ;  calVal  =  csInformation  -> rDCO_FCAL_RSEL5 ;   } ,CWE-704
+"if  ( BIT_PE ( CS -> CTL0 ,  CS_CTL0_DCORES_OFS )  )   {  dcoConst  =  * (  ( float * )  &csInfo -> rDCOER_CONSTK_RSEL04 )  ;  calVal  =  csInfo -> rDCOER_FCAL_RSEL04 ;   } ",CWE-704
+"void bounceThread1_start ( void *arg )   {  message_t msg1 ;  for (  ;  ;  )   {  while  ( amRadioSend ( AM_BROADCAST_ADDR ,  &msg1 ,  0 ,  21 )   =  =  EBUSY )   { } led1Off (  )  ;  if ( amRadioReceive ( &msg1 ,  5000 ,  21 )   =  =  SUCCESS )   {  led1On (  )  ;  } tosthread_sleep ( 500 )  ;  } }",Benign Code
